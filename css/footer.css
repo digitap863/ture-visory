@@ -1,0 +1,81 @@
+.footer-section{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: linear-gradient(93.56deg, #FF8F04 29.82%, rgba(249, 185, 0, 0.6) 104.94%);
+    display: flex;
+    border-radius:40px;
+    height: 450px;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+.footer-section  div{
+    margin-top: 4%;
+}
+.footer-section .logo-section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section .logo-section p{
+     color: #666767;
+     text-align: center;
+  
+}
+.footer-section .logo-section .social-media-links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+}
+.footer-section .logo-section .social-media-links img{
+ cursor: pointer;
+
+}
+
+.footer-section .pages-link{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    
+}
+.footer-section .pages-link a{
+   text-decoration: none;
+    color: #666767;
+    line-height: 48px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.footer-section .policy-section{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+
+}
+.footer-section .policy-section a{
+    text-decoration: none;
+     color: #666767;
+     line-height: 48px;
+     font-weight: 700;
+     font-size: 1.1rem;
+ }
+ .footer-section .copy-right p{
+    color: #000000;
+    font-size: 0.8rem;
+ }
+.footer-section .copy-right{
+    display: flex;
+    width: 90%;
+    align-items: end;
+    padding-left: 10%;
+    justify-content: space-between;
+    display: flex;
+}
