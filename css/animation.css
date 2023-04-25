@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+:root{
+    --color-blue--:rgb(255, 255, 255);
+    --text-blue--: #724D99;
+    --button-bg-color:linear-gradient(265.16deg, #724D99 17.94%, #CBBFD9 109.03%);
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+       background-color:#E7DDF3 ;
+       font-family:  Arial, Helvetica, sans-serif;
+    }
+    
+    h1{
+        padding: 0;
+    }
+
+    header{
+      
+        top: 0;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    header .inner-header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    
+    }
+    header .inner-header .logo{
+        width: 18rem;
+        height: auto;
+    }
+    header nav{
+        padding-top: 2rem;
+    }
+    header nav a{
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: Helvetica;
+        font-weight: 700;
+        padding: 2rem;
+        color:var(--color-blue--);
+        text-transform: uppercase;
+        padding-top: 2rem;
+    }
+    header nav a button{
+        text-transform: uppercase;
+        background: var(--button-bg-color);
+        border: none;
+        height: 2.5rem;
+        width: 11rem;
+        border-radius: 5px;
+        color: #ffffff;  
+    }
+
+
+/* course section */
+.course-section{
+margin-left: 6%;
+margin-right: 6%;
+margin-top: 6%;
+}
+.single-course {
+    display: flex;
+}
+.left-section{
+    width: 65%;
+}
+
+.single-course h2{
+    margin-top: 6%;
+    color: #1A2134;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 61px;
+}
+.course-rating{
+    display: flex;
+    margin-top: 3%;
+}
+.course-rating button{
+    height: 35px;
+    border: none;
+    background-color: #9078B0;
+    color: white;
+    padding: 0px 34px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.course-rating p{
+    padding-left: 75px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.course-rating .star{
+    padding-left: 20px;
+}
+.course-updations{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-updations h5{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.image-seciton{
+   margin-left: 1rem;
+    width: 100%;
+    height: 600px;
+    margin-top: -21%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.description{
+    background: #DECBF2;
+    /* border: 3.42337px solid #cfd1dc; */
+    padding: 35px;
+    margin-top: 6%;
+    border-radius: 14px;
+}
+.description h5{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.description p{
+    font-size: 1.1rem;
+}
+.description .tick-mark-list {
+    list-style-type: none; /* remove default bullet points */
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+
+}
+
+.description .tick-mark-list li::before {
+    content: "\2713"; /* tick mark symbol */
+    color: rgb(0, 0, 0); /* choose a color */
+    display: inline-block;
+    width: 1em;
+    padding: 15px;
+  }
+
+.right-section{
+    background-color: rgba(202, 179, 226, 0.69);
+    height: 450px;
+    width: 27%;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+.right-section h4{
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.right-section .strike{
+    display: flex;
+    /* text-decoration: line-through; */
+    padding-left: 2rem;
+} 
+.right-section p{
+    text-decoration: line-through;
+    color: rgba(110, 121, 151, 1);
+}
+.right-section span{
+    color: white;
+    background-color: #3247E6;
+    height: 1.8rem;
+    padding: 3px 6px;
+    border-radius: 7px;
+    margin-left: 1rem;
+}
+.right-section button{
+    background-color: #3247E6;
+    border: none;
+    width: 80%;
+    justify-content: space-evenly;
+    justify-content: sp;
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    color: white;
+    height: 4rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+.right-section img{
+    width: 2.5rem;
+    height: auto;
+}
+.right-section .course-feature{
+    margin-top: 9%;
+    margin-left: 2rem;
+}
+.right-section .course-feature h5{
+    font-weight: 600;
+}
+
+
+ 
+  
