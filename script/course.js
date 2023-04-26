@@ -1,4 +1,4 @@
-var swiper = new Swiper(".slider-content", {
+var swiper = new Swiper(".slider-content-c", {
     slidesPerView: 3,
     spaceBetween: 25,
     loop: true,
@@ -11,8 +11,8 @@ var swiper = new Swiper(".slider-content", {
       dynamicBullets: true,
     },
     navigation: {
-      nextEl: ".swiper-button-nex",
-      prevEl: ".swiper-button-pre",
+      nextEl: ".swiper-button-nex-c",
+      prevEl: ".swiper-button-pre-c",
     },
 
     breakpoints:{
@@ -23,7 +23,7 @@ var swiper = new Swiper(".slider-content", {
             slidesPerView: 1,
         },
         950: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
     },
   });
