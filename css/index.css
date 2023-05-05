@@ -140,6 +140,7 @@
     justify-content: start;
 }
 .subSlider .subSlide:nth-child(even){
+    
 }
 .subSlider::-webkit-scrollbar{
     display: none;
