@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .bTest {
@@ -15,7 +15,7 @@
 
 .bannerContainer {
   width: 100%;
-  height: 45rem;
+  height: 40rem;
   position: relative;
 }
 
@@ -84,7 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 85%;
 }
 
 .contactHeading {
@@ -220,7 +220,7 @@
   color: #bebfbf;
 }
 .row-section .left-section form {
-  width: 98%;
+  width: 100%;
   margin-top: 7%;
   position: relative;
 }
@@ -424,4 +424,90 @@ footer .copy-right {
   align-items: center;
   justify-content: space-between;
   padding: 2% 0;
+}
+
+@media only screen and (max-width: 1301px) {
+  .bannerContainer {
+    width: 100%;
+    height: 32rem;
+    position: relative;
+  }
+
+  .row-section .left-section button {
+    padding: 2px;
+  }
+
+  .getIn-grid1 .address-container {
+    gap: 2rem;
+  }
+
+  .getIn-grid1 .sub-head {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1135px) {
+  .bannerContainer {
+    height: 29rem;
+  }
+  .subSlideMain .contentSub {
+    height: 65%;
+  }
+  .mainSlideBanner .content {
+    height: 55%;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .navSection {
+    width: 64%;
+  }
+
+  .logoSection img {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .bannerContainer {
+    height: 24rem;
+  }
+  .logoSection img {
+    width: 16rem;
+  }
+
+  .header .navSection {
+    padding-top: 2.5rem;
+    width: 75%;
+  }
+}
+
+@media (max-width: 760px) {
+  .bannerContainer {
+    height: 13rem;
+  }
+  .header .navSection {
+    display: none;
+  }
+
+  .contactContainer .contactHeading {
+    margin-bottom: -2.5rem;
+    font-size: 2rem;
+  }
+  .navHamBurger {
+    display: block;
+    color: white;
+  }
+}
+
+@media (max-width: 420px) {
+  .header .logoSection img {
+    width: 10rem;
+  }
+  .bannerContainer {
+    height: 10rem;
+  }
+  .contactContainer .contactHeading {
+    font-size: 1.5rem;
+  }
 }
