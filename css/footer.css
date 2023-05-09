@@ -79,3 +79,44 @@
     justify-content: space-between;
     display: flex;
 }
+
+@media screen and (max-width: 700px) {
+    .footer-section .logo-section {
+        width: 100%;
+    
+    }
+    .footer-section .pages-link {
+       display: none;
+    }
+    
+    .footer-section .policy-section {
+        display: none;
+    }
+    .footer-section .logo-section .social-media-links {
+    
+        width: 60%;
+    }
+    .footer-section .hidden{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .footer-section .logo-section .social-media-links {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+    .footer-section .logo-section p {
+        color: #666767;
+        text-align: justify;
+    }
+    .footer-section .footer-logo{
+        width: 15rem;
+        padding-bottom: 62px;
+
+    }
+    .footer-section .logo-section {
+        padding: 0px 20px;
+    }
+    
+}
