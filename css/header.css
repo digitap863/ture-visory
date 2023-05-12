@@ -1,74 +1,116 @@
-:root{
-    --color-blue--:rgba(114, 77, 153, 1);
-    --text-blue--: #724D99;
-    --button-bg-color:linear-gradient(265.16deg, #724D99 17.94%, #CBBFD9 109.03%);
+.header {
+    width: 95%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.header .logoSection {
+    width: 30%;
+}
+
+.header .navSection {
+    width: 70%;
+    padding: 0 8%;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoSection img {
+    width: 23rem;
+}
+
+.navSection .nav {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Helvetica;
+    font-weight: 700;
+    color:#CFC0DE;
+    text-transform: uppercase;
+}
+.active{
+    color: white !important;
+}
+.navSection .ctaBtn{
+    background: linear-gradient(265.16deg, #724D99 17.94%, #CBBFD9 109.03%);
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+@media (max-width:1050px) {
+    .header .navSection{
+        padding: 2rem 4% 0 8% ;
     }
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-       
-        font-family:  Arial, Helvetica, sans-serif;
-    }
-    main{
-      background-color: #E7DDF3;;
-    }
-    h1{
-        padding: 0;
-    }
-    .banner-section{
-        width: 100%;
-        height: 100vh;
-    }
-    .container-curve{
-        width: 100%;
-        height: 90%;
-        background: linear-gradient(105.34deg, #FFBF03 12.32%, #FF8F04 45.38%, #FF8504 56.85%, #FE3603 80.33%);
-        border-bottom-left-radius: 35%;
-        position: relative;
-        
-        
-    }
-    header{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    header .inner-header{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1rem;
-    
-    }
-    header .inner-header .logo{
+    .logoSection img{
         width: 18rem;
-        height: 5rem;
     }
-    header nav{
-        padding-top: 2rem;
+}
+@media (max-width:960px) {
+    .header .navSection{
+        padding: 2rem 0 0 3% ;
     }
-    header nav a{
-        text-decoration: none;
-        font-size: 1rem;
-        font-family: Helvetica;
-        font-weight: 700;
-        padding: 2rem;
-        color:var(--color-blue--);
-        text-transform: uppercase;
-        padding-top: 2rem;
+    .logoSection img{
+        margin-left: -3rem;
     }
-    header nav a button{
-        text-transform: uppercase;
-        background: var(--button-bg-color);
-        border: none;
-        height: 2.5rem;
-        width: 11rem;
-        border-radius: 5px;
-        color: #ffffff;
-        
+}
+.navHamBurger{
+    width: 2rem;
+    display: none;
+    margin-top: 3rem;
+    margin-right:2rem ;
+}
+.header .navSection{
+    display: flex;
+
+}
+@media (max-width:820px) {
+  .navHamBurger{
+    display: block;
+  }  
+  .header .navSection{
+    flex-direction: column;
+    margin-top: 5rem;
+    row-gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: end;
+    margin-right: -3rem;
+  }
+  .header{
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+}
+
+
+@media (max-width:1135px) {
+    .subSlideMain .contentSub{
+        height: 65%;
     }
+    .mainSlideBanner .content{
+        height: 55%;
+    }
+}
+.subSlider{
+    min-width: 15rem;
+}
+.mainSlide{
+    min-width: 30rem;
+}
+@media (max-width:890px) {
+    .SliderSection{
+        width: 90%;
+    }
+}
+@media (max-width:815px) {
+    .SliderSection{
+        width: 95%;
+        margin-left: -5%;
+    }
+}
