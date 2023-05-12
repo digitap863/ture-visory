@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.mainSec{
+    width: 100%;
+    overflow-x: clip;
+}
+
+.header {
+    width: 95%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.header .logoSection {
+    width: 30%;
+}
+
+.header .navSection {
+    width: 70%;
+    padding: 0 8%;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoSection img {
+    width: 23rem;
+}
+
+.navSection .nav {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Helvetica;
+    font-weight: 700;
+    color:#CFC0DE;
+    text-transform: uppercase;
+}
+.active{
+    color: white !important;
+}
+.navSection .ctaBtn{
+    background: linear-gradient(265.16deg, #724D99 17.94%, #CBBFD9 109.03%);
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+.SliderSection{
+    width: 80%;
+    display: flex; 
+    column-gap: 2rem;
+}
+.mainSlide{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    transition: all 0.5s;
+
+}
+.mainSlideBanner{
+    width: 95%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    aspect-ratio: 1/0.56;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.mainSlide img{
+    width: 60%;
+    position: absolute;
+    right: -25px;
+    transition: all 0.5s;
+}
+.mainSlideBanner .content{
+    width: 93%;
+    height: 40%;
+    padding-bottom: 15px;
+    transition: all 0.5s;
+}
+.mainSlideBanner .content h1{
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s;
+}
+.mainSlideBanner .content p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    max-width: 18rem;
+    margin-top:0.5rem ;
+    line-height: 17px;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+.mainSlideBanner .content span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+}
+.mainSlideBanner .content a{
+    background: linear-gradient(180deg, #E2F0F0 0%, #724D99 100%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+.subSlider{
+    width: 30%;
+    display: flex;
+    aspect-ratio: 1/1.8;
+    overflow-y: hidden;
+    overflow-x: initial;
+    flex-wrap: wrap;
+}
+.subSlider .subSlide{
+    width: 100%;
+    aspect-ratio: 1/0.9;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+.subSlider .subSlide:nth-child(even){
+}
+.subSlider::-webkit-scrollbar{
+    display: none;
+}
+.subSlideMain{
+    width: 90%;
+    height: 80%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.subSlideMain img{
+    position: absolute;
+    width: 75%;
+    right: -27px;
+}
+.subSlideMain .contentSub{
+    color: white;
+    width: 90%;
+    height: 54%;
+    z-index: 10;
+}
+.subSlideMain .contentSub p{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    max-width: 18rem;
+    margin-top:0.5rem ;
+    line-height: 17px;
+}
+.subSlideMain .contentSub span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+}
+.subSlideMain .contentSub a{
+    background: linear-gradient(180deg, #E2F0F0 0%, #724D99 100%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+.subSlideMain .contentSub h1{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 20%;
+    column-gap: 0.5rem;
+}
+.buttons span{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 4px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttons span:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.respButtons span:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+@media (max-width:960px) {
+    .header .navSection{
+        padding: 2rem 4% 0 8% ;
+    }
+    .logoSection img{
+        width: 18rem;
+    }
+}
+@media (max-width:890px) {
+    .header .navSection{
+        padding: 2rem 4% 0 3% ;
+    }
+    .logoSection img{
+        margin-left: -3rem;
+    }
+}
+.navHamBurger{
+    width: 2rem;
+    display: none;
+    margin-top: 3rem;
+    margin-right:2rem ;
+}
+.header .navSection{
+    display: flex;
+
+}
+@media (max-width:760px) {
+  .navHamBurger{
+    display: block;
+  }  
+  .header .navSection{
+    flex-direction: column;
+    margin-top: 5rem;
+    row-gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: end;
+    margin-right: -3rem;
+  }
+  .header{
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+}
+
+
+@media (max-width:1135px) {
+    .subSlideMain .contentSub{
+        height: 65%;
+    }
+    .mainSlideBanner .content{
+        height: 55%;
+    }
+}
+.subSlider{
+    min-width: 15rem;
+}
+.mainSlide{
+    min-width: 30rem;
+}
+@media (max-width:890px) {
+    .SliderSection{
+        width: 90%;
+    }
+}
+@media (max-width:815px) {
+    .SliderSection{
+        width: 95%;
+        margin-left: -5%;
+    }
+}
+.respSlider{
+    display: none;
+    aspect-ratio: 1/1.8;
+    width: 65%;
+    overflow-y: hidden;
+    overflow-x: initial;
+    padding-top: 2.5rem;
+    min-width: 25rem;
+}
+.respSlider .subSlide{
+    width: 60%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: end;
+}
+.respSlider .subSlide .subSlideMain{
+    width: 100%;
+    height: 75%;
+}
+.respButtons{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    row-gap: 0.5rem;
+    z-index: 100;
+}
+.respButtons span{
+    padding: 20px 3px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+@media (max-width:760px) {
+    .SliderSection{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+    .respSlider{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+    .respButtons{
+        display: flex;
+    }
+}
+

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+:root{
+    --color-blue--: rgba(135, 121, 179, 1);
+    --text-blue--: #724D99;
+    --button-bg-color:linear-gradient(265.16deg, #724D99 17.94%, #CBBFD9 109.03%);
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+       background-color:#FBF6FF ;
+       font-family:  Arial, Helvetica, sans-serif;
+    }
+    
+    h1{
+        padding: 0;
+    }
+
+    header{
+      
+        top: 0;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    header .inner-header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    
+    }
+    header .inner-header .logo{
+        width: 18rem;
+        height: auto;
+    }
+    header nav{
+        padding-top: 2rem;
+    }
+    header nav a{
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: Helvetica;
+        font-weight: 700;
+        padding: 2rem;
+        color:var(--color-blue--);
+        text-transform: uppercase;
+        padding-top: 2rem;
+    }
+    header nav a button{
+        text-transform: uppercase;
+        background: var(--button-bg-color);
+        border: none;
+        height: 2.5rem;
+        width: 11rem;
+        border-radius: 5px;
+        color: #ffffff;  
+    }
+ .pages-link a{
+    text-decoration: none;
+    padding: 10px;
+}
+ .pages-link {
+    margin: 76px;
+}
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.main-header h1{
+    color: #724D99;
+    font-weight: 700;
+}
+.main-header p{
+    color: #797979;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.career-details{
+    margin-left: 13%;
+    border: 1px solid #724D99;
+    padding: 46px;
+    margin-right: 13%;
+    border-radius: 30px;
+}
+.career-details h3{
+    font-weight: 700;
+    color: #724D99;
+    padding: 9px 0px;
+}
+.career-header{
+    display: flex;
+    justify-content: space-between;
+}
+ .main-paragraph {
+    color: #797979;
+    text-align: justify;
+    font-size: 14px;
+}
+ul li{
+    padding: 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    color: #797979;
+}
+.contacts-header{
+
+}
+.main-header span{
+    color: #724D99;
+}
+.uploading-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 37px;
+}
+.uploading-section input{
+    width: 19rem;
+    height: 37px;
+    border-color:  #724D99;
+    outline: none;
+    padding: 20px;
+    border-radius: 11px;
+}
+.uploading-section span{
+    color: #724D99;
+}
+.uploading-section button{
+    padding: 3px 20px;
+    border: 1px solid;
+    border-radius: 12px;
+}
+.apply-button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 80px;
+}
+.apply-button button{
+    padding: 10px 22px;
+    background-color: #724D99;
+    color: #FfffFF;
+    border: none;
+    border-radius: 30px;
+}
+@media (max-width:600px)  {
+    header nav a {
+  display: none;
+    }
+    .pages-link {
+        margin: 16px;
+    }
+    .career-details {
+        margin-left: 7%;
+        border: 1px solid #724D99;
+        padding: 19px;
+        margin-right: 7%;
+        border-radius: 30px;
+    }
+    .main-header {
+     
+        height: 179px;
+    }
+    .uploading-section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 37px;
+        flex-direction: column;
+        padding: 32px 0px;
+    }
+    .uploading-section input {
+        width: 19rem;
+        height: 37px;
+        border-color: #724D99;
+        outline: none;
+        padding: 20px;
+        border-radius: 11px;
+        margin: 20px 0px;
+    }
+    .uploading-section button {
+        width: 46%;
+        padding: 3px 20px;
+        border: 1px solid;
+        border-radius: 12px;
+    }
+    .apply-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+}

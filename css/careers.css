@@ -111,7 +111,7 @@
 }
 
 .value-section{
-    height: 300px;
+    height: 800px;
  
     padding: 150px;
 }
@@ -152,3 +152,111 @@
     font-weight: 700;
     padding-bottom: 76px;
 }
+.career-details .career-header{
+    color: #724D99;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+
+}
+.career-details .main-career{
+    display: flex;
+    margin-right: 15%;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    transition: 1s ease-in-out;
+
+}
+.career-details .main-career .single-career{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 46%;
+    /* align-items: center; */
+    flex: 40%;
+    /* flex-wrap: wrap; */
+    padding: 26px;
+    margin: 10px 18px;
+    border: 1px solid;
+    border-radius: 13px;
+}
+.career-details .main-career .single-career h3{
+    font-size: 22px;
+    line-height: 37px;
+    font-weight: 700;
+}
+.career-details .main-career .place{
+    font-size: 14px;
+}
+.career-details .main-career span{
+  color: #724D99;
+}
+.career-details .paragraph{
+    color: #797979;
+    font-size: 15px;
+}
+.career-details .main-career button{
+    background-color: white;
+    width: 34%;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid;
+    padding: 15px 15px;
+    border-radius: 25px;
+}
+.career-details .main-career   :hover{
+   background: #8D60BC !important;
+    color: white;
+}
+.career-details .main-career :hover p{
+    color: white;
+}
+.career-details .main-career   :hover span{
+    color: white;
+}
+@media (max-width:900px) {
+    .career-details .main-career {
+        display: flex;
+        margin-right: 1%;
+        margin-top: 10%;
+        flex-wrap: wrap;
+        margin-left: 1%;
+    }
+    .career-details .main-career .single-career {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        max-width: 46%;
+        /* align-items: center; */
+        flex: 41%;
+        /* flex-wrap: wrap; */
+        padding: 19px;
+        margin: 10px 18px;
+        border: 1px solid;
+        border-radius: 13px;
+    }
+    .career-details .main-career button {
+        width: 46%;
+    }
+}
+@media (max-width:600px) {
+    .career-link .pages-link {
+        margin: 26px;
+    }
+    .value-section {
+        height: 600px;
+        padding: 44px;
+    }
+    .single-career {
+    
+        max-width: 100% !important;
+        /* align-items: center; */
+        flex: 100% !important;
+  
+    }
+
+}
+
