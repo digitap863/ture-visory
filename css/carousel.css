@@ -1,7 +1,7 @@
 .course-container {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 66vh;
     display: flex;
    overflow: hidden;
   }
@@ -14,10 +14,10 @@
   }
   
   .swiper-slide {
-    background-color: #ffffff;
+
     width: 300px;
     height: 400px;
-    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.3); */
     filter: blur(1px);
     border-radius: 40px; 
     display: flex;
