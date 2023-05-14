@@ -1,5 +1,5 @@
 .header {
-    width: 95%;
+    width: 100%;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -19,9 +19,14 @@
     justify-content: space-between;
 }
 
+
 .logoSection img {
-    width: 23rem;
+    width: 13rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
 }
+
+
 
 .navSection .nav {
     text-decoration: none;
@@ -48,16 +53,21 @@
         padding: 2rem 4% 0 8% ;
     }
     .logoSection img{
-        width: 18rem;
+        width: 13rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
     }
 }
 @media (max-width:960px) {
     .header .navSection{
         padding: 2rem 0 0 3% ;
     }
-    .logoSection img{
-        margin-left: -3rem;
+    .logoSection img {
+        width: 12rem;
+        margin-left: 2rem;
+        margin-top: 2.5rem;
     }
+
 }
 .navHamBurger{
     width: 2rem;
@@ -82,12 +92,12 @@
     margin-right: -3rem;
   }
   .header{
-    height: 5rem;
+    height: 6rem;
     overflow: hidden;
     transition: 0.3s;
+    margin: -12px;
   }
 }
-
 
 @media (max-width:1135px) {
     .subSlideMain .contentSub{

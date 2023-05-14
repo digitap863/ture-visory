@@ -5,6 +5,10 @@ var swiper = new Swiper(".slider-content-c", {
     centerSlide: 'true',
     fade: 'true',
     grabCursor: 'true',
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+      },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

@@ -22,45 +22,6 @@
         padding: 0;
     }
 
-    header{
-      
-        top: 0;
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    header .inner-header{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1rem;
-    
-    }
-    header .inner-header .logo{
-        width: 18rem;
-        height: auto;
-    }
-    header nav{
-        padding-top: 2rem;
-    }
-    header nav a{
-        text-decoration: none;
-        font-size: 1rem;
-        font-family: Helvetica;
-        font-weight: 700;
-        padding: 2rem;
-        color:var(--color-blue--);
-        text-transform: uppercase;
-        padding-top: 2rem;
-    }
-    header nav a button{
-        text-transform: uppercase;
-        background: var(--button-bg-color);
-        border: none;
-        height: 2.5rem;
-        width: 11rem;
-        border-radius: 5px;
-        color: #ffffff;  
-    }
 
 
 /* course section */
@@ -75,8 +36,14 @@ margin-top: 6%;
 .left-section{
     width: 65%;
 }
+.left-section .pages-link{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
 .left-section .pages-link a{
     margin-left: 7px;
+ 
     text-decoration: none;
     padding: 11px;
     font-weight: 70;
