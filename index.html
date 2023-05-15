@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/homeMain.css">
 
+
 </head>
 
 <body>
@@ -17,16 +18,16 @@
         <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
             <div class="header">
                 <div class="logoSection">
-                    <img src="assets/logo/Frame 676..png" alt="">
+                    <img src="assets/logos/Frame 676..png" style="width: 13rem; margin-top: 2.5rem; margin-left: 2rem !important;" alt="">
                 </div>
                 <div class="navSection">
-                    <a class="nav active" href="index.html">Home</a>
-                    <a class="nav" href="about.html">About Us</a>
-                    <a class="nav" href="careers.html">Career</a>
-                    <a class="nav" href="blogs.html">Blogs</a>
+                    <a class="nav " href="index.html">Home</a>
+                    <a class="nav " href="about.html">About Us</a>
+                    <a class="nav active" href="careers.html">Career</a>
+                    <a class="nav " href="blogs.html">Blogs</a>
                     <a class="nav" href="contacts.html">Contact Us</a>
                     <a class="ctaBtn" href="courses.html">Our Courses</a>
-
+    
                 </div>
                 <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
             </div>
@@ -52,7 +53,7 @@
             <span class="prevButtonResp"></span>
             <span class="nextButtonResp"></span>
         </div>
-
+        
 
     </section>
 </body>
@@ -266,7 +267,36 @@
     mainSlideView(0);
 
 
+
+
+
+
 </script>
-<script src="/script/header.js"></script>
+<script>
+    
+let btn = document.querySelector('.content').querySelectorAll('span')
+btn.forEach((item) => {
+    item.addEventListener('click', () => {
+        window.location.href = 'blogSingle.html'
+    })
+})
+
+const navHamBurger = document.querySelector('.navHamBurger')
+const header = document.querySelector('.header')
+let navState = false
+navHamBurger.addEventListener('click', () => {
+    if (!navState) {
+        header.style.height = '25rem'
+        navState = true;
+    } else {
+        header.style.height = '6rem'
+        navState = false;
+    }
+
+})
+
+
+
+</script>
 
 </html>

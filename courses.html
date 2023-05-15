@@ -10,7 +10,21 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <script>
+        const navHamBurger = document.querySelector('.navHamBurger')
+        const header = document.querySelector('.header')
+        let navState = false
+        navHamBurger.addEventListener('click', () => {
+            if (!navState) {
+                header.style.height = '25rem'
+                navState = true;
+            } else {
+                header.style.height = '6rem'
+                navState = false;
+            }
 
+        })
+    </script>
 
 </head>
 
@@ -19,18 +33,19 @@
         style="background-color: #E7DDF3;display: flex;align-items: center;justify-content: center;flex-direction: column;">
         <div class="headerContainer"
             style="display: flex;align-items: center;justify-content: start;flex-direction: column;background: url(assets/banner/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking\ 3.png);background-position: top center;background-size: cover;background-repeat: no-repeat;height: 25rem;border-bottom-left-radius: 20rem;width: 100%;">
-            <div class="header" >
+            <div class="header">
                 <div class="logoSection">
-                    <img src="assets/logos/Frame 676..png" style="width: 14rem; margin-top: 2.5rem; margin-left: 2rem !important;" alt="">
+                    <img src="assets/logos/Frame 676..png"
+                        style="width: 13rem; margin-top: 2.5rem; margin-left: 2rem !important;" alt="">
                 </div>
                 <div class="navSection">
                     <a class="nav " href="index.html">Home</a>
                     <a class="nav " href="about.html">About Us</a>
-                    <a class="nav" href="careers.html">Career</a>
-                    <a class="nav active" href="blogs.html">Blogs</a>
+                    <a class="nav active" href="careers.html">Career</a>
+                    <a class="nav " href="blogs.html">Blogs</a>
                     <a class="nav" href="contacts.html">Contact Us</a>
                     <a class="ctaBtn" href="courses.html">Our Courses</a>
-          
+
                 </div>
                 <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
             </div>
@@ -369,6 +384,8 @@
 
 <script src="./script/header.js"></script>
 <script>
+
+
 
     const fashionDesigning = document.querySelectorAll('.fashioDesigning')
     const all = document.querySelectorAll('.all')
