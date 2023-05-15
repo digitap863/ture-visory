@@ -27,18 +27,18 @@
             <div class="container-curve">
                 <div class="header">
                     <div class="logoSection">
-                        <img src="assets/logos/Frame 676..png" alt="">
+                        <img src="assets/logo/Frame 676..png" alt="">
                     </div>
                     <div class="navSection">
                         <a class="nav " href="index.html">Home</a>
                         <a class="nav active" href="about.html">About Us</a>
-                        <a class="nav " href="careers.html">Career</a>
-                        <a class="nav " href="blogs.html">Blogs</a>
-                        <a class="nav" href="contacts.html">Contact US</a>
-                        <a href="#" class="ctaBtn">Our Courses</a>
+                        <a class="nav" href="careers.html">Career</a>
+                        <a class="nav" href="blogs.html">Blogs</a>
+                        <a class="nav" href="contacts.html">Contact Us</a>
+                        <a class="ctaBtn" href="courses.html">Our Courses</a>
 
                     </div>
-                    <img src="assets/icone/hamburger.png" class="navHamBurger" alt="">
+                    <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
                 </div>
 
                 <div class="container-fluid">
@@ -106,14 +106,15 @@
                                             style="background-image: url(./assets/images/Section..png);">
                                             <div class="content-card">
                                                 <h3>Designing</h3>
-                                                <p>There's a lot to learn about LoL, so we'll start with the essentials. 
-                                                    Explore the guide below for an overview of the most popular game mode.</p>
-                                                    <div class="card-button">
+                                                <p>There's a lot to learn about LoL, so we'll start with the essentials.
+                                                    Explore the guide below for an overview of the most popular game
+                                                    mode.</p>
+                                                <div class="card-button">
                                                     <p>1`10k+ Played</p>
                                                     <button>Enrol Now </button>
-                                                    </div>
+                                                </div>
                                             </div>
-     
+
                                         </div>
 
                                     </div>
@@ -122,12 +123,13 @@
                                             style="background-image: url(./assets/images/Section-2.png);">
                                             <div class="content-card">
                                                 <h3>Animation</h3>
-                                                <p>There's a lot to learn about LoL, so we'll start with the essentials. 
-                                                    Explore the guide below for an overview of the most popular game mode.</p>
-                                                    <div class="card-button">
+                                                <p>There's a lot to learn about LoL, so we'll start with the essentials.
+                                                    Explore the guide below for an overview of the most popular game
+                                                    mode.</p>
+                                                <div class="card-button">
                                                     <p>1`10k+ Played</p>
                                                     <button>Enrol Now </button>
-                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -137,12 +139,13 @@
                                             style="background-image: url(./assets/images/Section-3.png);">
                                             <div class="content-card">
                                                 <h3>Designing</h3>
-                                                <p>There's a lot to learn about LoL, so we'll start with the essentials. 
-                                                    Explore the guide below for an overview of the most popular game mode.</p>
-                                                    <div class="card-button">
+                                                <p>There's a lot to learn about LoL, so we'll start with the essentials.
+                                                    Explore the guide below for an overview of the most popular game
+                                                    mode.</p>
+                                                <div class="card-button">
                                                     <p>1`10k+ Played</p>
                                                     <button>Enrol Now </button>
-                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -152,12 +155,13 @@
                                             style="background-image: url(./assets/images/Section..png);">
                                             <div class="content-card">
                                                 <h3>Accountant</h3>
-                                                <p>There's a lot to learn about LoL, so we'll start with the essentials. 
-                                                    Explore the guide below for an overview of the most popular game mode.</p>
-                                                    <div class="card-button">
+                                                <p>There's a lot to learn about LoL, so we'll start with the essentials.
+                                                    Explore the guide below for an overview of the most popular game
+                                                    mode.</p>
+                                                <div class="card-button">
                                                     <p>1`10k+ Played</p>
                                                     <button>Enrol Now </button>
-                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -167,21 +171,22 @@
                                             style="background-image: url(./assets/images/Section-3.png);">
                                             <div class="content-card">
                                                 <h3>Designing</h3>
-                                                <p>There's a lot to learn about LoL, so we'll start with the essentials. 
-                                                    Explore the guide below for an overview of the most popular game mode.</p>
-                                                    <div class="card-button">
+                                                <p>There's a lot to learn about LoL, so we'll start with the essentials.
+                                                    Explore the guide below for an overview of the most popular game
+                                                    mode.</p>
+                                                <div class="card-button">
                                                     <p>1`10k+ Played</p>
                                                     <button>Enrol Now </button>
-                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
                                     </div>
-                                    
+
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            
+
                         </section>
                     </div>
                     <div class="right-section">
@@ -473,10 +478,25 @@
 </body>
 <!-- Swiper JS -->
 <script>
-    function coursepage(){
-        window.location.href="/animation.html"
+    function coursepage() {
+        window.location.href = "/animation.html"
     }
+    const navHamBurger = document.querySelector('.navHamBurger')
+    const header = document.querySelector('.header')
+    let navState = false
+    navHamBurger.addEventListener('click', () => {
+        if (!navState) {
+            header.style.height = '25rem'
+            navState = true;
+        } else {
+            header.style.height = '5rem'
+            navState = false;
+        }
+
+    })
+
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./script/carousel.js"></script>
 <script src="./script/testimonials.js"></script>

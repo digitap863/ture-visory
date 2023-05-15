@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>True Visory</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/homeMain.css">
 
 </head>
 
@@ -22,16 +22,18 @@
                 <div class="navSection">
                     <a class="nav active" href="index.html">Home</a>
                     <a class="nav" href="about.html">About Us</a>
-                    <a class="nav " href="careers.html">Career</a>
+                    <a class="nav" href="careers.html">Career</a>
                     <a class="nav" href="blogs.html">Blogs</a>
-                    <a class="nav" href="contacts.html">Contact US</a>
-                    <a href="#" class="ctaBtn">Our Courses</a>
+                    <a class="nav" href="contacts.html">Contact Us</a>
+                    <a class="ctaBtn" href="courses.html">Our Courses</a>
 
                 </div>
-                <img src="assets/icone/hamburger.png" class="navHamBurger" alt="">
+                <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
             </div>
             <div class="SliderSection">
                 <div class="mainSlide">
+
+
                 </div>
                 <div class="subSlider">
                 </div>
@@ -50,6 +52,7 @@
             <span class="prevButtonResp"></span>
             <span class="nextButtonResp"></span>
         </div>
+
 
     </section>
 </body>
@@ -112,9 +115,8 @@
 
 
     let currentSlide = 0;
-    nextButton.addEventListener('click', () => {
 
-
+    function nextSlide() {
         const numSlides = mainContainer.children.length;
         currentSlide = (currentSlide + 1) % numSlides;
         if (currentSlide != subSliderContent.length - 1) {
@@ -132,9 +134,8 @@
         setTimeout(() => {
             mainSlideView(currentSlide)
         }, 300)
-
-    });
-    prevButton.addEventListener('click', () => {
+    }
+    function prevSlide() {
         if (currentSlide != 0) {
             const numSlides = mainContainer.children.length;
             currentSlide = (currentSlide - 1) % numSlides;
@@ -149,16 +150,38 @@
                 mainSlideView(currentSlide)
             }, 300)
         }
+    }
+    var interval;
+    interval = setInterval(() => {
+        nextSlide();
+        nextResp();
+    }, 4000);
+
+    document.querySelector('.subSlider').addEventListener('mouseenter', () => {
+        clearInterval(interval)
+
+    })
+    document.querySelector('.subSlider').addEventListener('mouseleave', () => {
+        interval = setInterval(() => {
+            nextSlide();
+            nextResp();
+        }, 1000);
+    })
+
+    nextButton.addEventListener('click', () => {
+        nextSlide();
+    });
+    prevButton.addEventListener('click', () => {
+        prevSlide();
     });
 
     const mainContainerResp = document.querySelector('.respSlider');
     const nextButtonResp = document.querySelector('.nextButtonResp');
     const prevButtonResp = document.querySelector('.prevButtonResp');
-    let currentSlideResp=0;
+    let currentSlideResp = 0;
 
-    
 
-    nextButtonResp.addEventListener('click', () => {
+    function nextResp() {
         const numSlides = mainContainerResp.children.length;
         currentSlideResp = (currentSlideResp + 1) % numSlides;
         if (currentSlideResp != subSliderContent.length - 1) {
@@ -170,16 +193,22 @@
                 behavior: 'smooth'
             });
         }
-    });
-    prevButtonResp.addEventListener('click', () => {
+    }
+    function prevResp() {
         if (currentSlideResp != 0) {
             const numSlides = mainContainerResp.children.length;
             currentSlideResp = (currentSlideResp - 1) % numSlides;
             mainContainerResp.children[currentSlideResp].scrollIntoView({
                 behavior: 'smooth'
             });
-            
+
         }
+    }
+    nextButtonResp.addEventListener('click', () => {
+        nextResp()
+    });
+    prevButtonResp.addEventListener('click', () => {
+        prevResp()
     });
 
 
@@ -217,9 +246,9 @@
                     </div>`
     }
     mainContainerResp.children[currentSlideResp].scrollIntoView({
-                behavior: 'smooth'
+        behavior: 'smooth'
     });
-   
+
     function mainSlideView(val) {
         const mainSlide = document.querySelector('.mainSlide')
         mainSlide.style.transform = 'translate(0,0)'
@@ -237,25 +266,7 @@
     mainSlideView(0);
 
 
-
-
-    const navHamBurger = document.querySelector('.navHamBurger')
-    const header = document.querySelector('.header')
-    let navState = false
-    navHamBurger.addEventListener('click', () => {
-        if (!navState) {
-            header.style.height = '20rem'
-            navState = true;
-        } else {
-            header.style.height = '5rem'
-            navState = false;
-        }
-
-    })
-
-
-
-
 </script>
+<script src="/script/header.js"></script>
 
 </html>

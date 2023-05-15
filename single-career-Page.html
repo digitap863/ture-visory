@@ -26,20 +26,20 @@
     <main>
         <!-- Header-section -->
         <section>
-            <div class="header">
+            <div class="header" >
                 <div class="logoSection">
-                    <img src="assets/logos/image-3.png" alt="">
+                    <img src="assets/logos/image-3.png" style="width: 14rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
                 </div>
                 <div class="navSection">
                     <a class="nav " href="index.html">Home</a>
-                    <a class="nav" href="about.html">About Us</a>
+                    <a class="nav " href="about.html">About Us</a>
                     <a class="nav active" href="careers.html">Career</a>
-                    <a class="nav" href="blogs.html">Blogs</a>
-                    <a class="nav" href="contacts.html">Contact US</a>
-                    <a href="#" class="ctaBtn">Our Courses</a>
-    
+                    <a class="nav " href="blogs.html">Blogs</a>
+                    <a class="nav" href="contacts.html">Contact Us</a>
+                    <a class="ctaBtn" href="courses.html">Our Courses</a>
+          
                 </div>
-                <img src="assets/icone/hamburger.png" class="navHamBurger" alt="">
+                <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
             </div>
         </section>
         <!-- Header-section-- end -->
@@ -105,14 +105,14 @@
 
 
                 <div class="uploading-section">
-                    <input type="email" placeholder="enter email"/>
+                    <input type="email" placeholder="enter email" />
                     <span>Attach your Resume</span>
-                    <button>+ Add  pdf</button>
+                    <button>+ Add pdf</button>
 
 
                 </div>
                 <div class="apply-button">
-                <button>Apply Now</button>
+                    <button>Apply Now</button>
                 </div>
 
 
@@ -125,7 +125,7 @@
                     <img class="footer-logo" src="./assets/logos/image-3.png" />
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been
-                        the industry's  standard dummy text ever since the 1500s,</p>
+                        the industry's standard dummy text ever since the 1500s,</p>
                     <div class="social-media-links">
                         <div class="fab"><img src="./assets/logos/Group 21.png" /></div>
                         <div class="fab"><img src="./assets/logos/Group 19.png" /></div>
@@ -139,18 +139,33 @@
                     <a href="#">Careers</a>
                     <a href="#">Contact Us</a>
                 </div>
-   
+
                 <div class="copy-right">
                     <p>ALL COPYRIGHTS RESERVED @True VIsory</p>
                     <p class="hidden">PRIVACY POLICY | DISCLAIMER</p>
-    
+
                 </div>
             </div>
-    
+
         </footer>
 
     </main>
 </body>
+<script>
+    const navHamBurger = document.querySelector('.navHamBurger')
+    const header = document.querySelector('.header')
+    let navState = false
+    navHamBurger.addEventListener('click', () => {
+        if (!navState) {
+            header.style.height = '25rem'
+            navState = true;
+        } else {
+            header.style.height = '6rem'
+            navState = false;
+        }
+
+    })
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./script/value.js"></script>
