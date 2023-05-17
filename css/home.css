@@ -20,6 +20,7 @@ h1{
 .banner-section{
     width: 100%;
     height: 100vh;
+    margin-top: -15px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -59,6 +60,9 @@ h1{
     font-size: 3rem;
     /* font-size: 86px; */
     line-height: 55px;
+    
+    animation: LeftA 2s linear 2s ;
+    transition: 2s ease-in-out;
 
 }  
 .container-fluid .left-section p{
@@ -75,9 +79,13 @@ h1{
     width: 9rem;
     border-radius: 14px;
     color: #ffffff;
+    animation: header 2s linear 2s ;
+    transition: 2s ease-in-out;
 } 
 .container-fluid .right-section img{
 width: 28rem;
+animation: RightA 2s linear 2s ;
+transition: 2s ease-in-out;
 }
 /* banner section end */
 
@@ -106,6 +114,8 @@ width: 28rem;
 }
 .about-section .left-section img{
     width: 30rem;
+    transition: 1s ease-in-out;
+    animation: BG-Image  10s linear 0.1s infinite;
  }
 .about-section .right-section p {
     color: #8E8E94;
@@ -134,6 +144,8 @@ width: 28rem;
  }
  .about-section .about-glob-1 img{
    width: 6rem;
+   transition: 1s ease-in-out;
+   animation: lds-ellipsis2 10s linear 0.3s infinite;
  }
 /* about section end */
 
@@ -163,6 +175,8 @@ width: 28rem;
  }
  .course-section .right-section img{
     width:100%;
+    transition: 1s ease-in-out;
+    animation: BG-Image  10s linear 0.1s infinite;
 
  }
  .course-section .left-section h2{
@@ -246,6 +260,8 @@ display: flex;
 .available-medium .left-section img{
     width: 65%;
     height: auto;
+    transition: 1s ease-in-out;
+    animation: BG-Image  10s linear 0.1s infinite;
 
   
 }
@@ -699,6 +715,9 @@ footer{
 
 /* latptop view */
 @media screen and (max-width: 900px) {
+    .about-glob-5{
+        display: none !important;
+    }
     .learn-with-us .second-row {
         padding-left: 0;
         padding-right: 0;
@@ -851,7 +870,19 @@ footer{
 
 /* medium phone */
 @media screen and (max-width: 700px) {
+    .about-glob-8{
+        display: none !important;
+    }
+    .about-glob-6{
+        width: 5rem !important;
+        height: 5rem !important;
+        position: absolute;
+        right: 10% !important;
+    }
 
+    .about-glob-4{
+        display: none !important;
+    }
 .banner-section .container-curve .container-fluid {
 flex-direction: column-reverse;
 
@@ -1197,5 +1228,160 @@ width: 100% !important;
     .callback-back-section h2 {
         font-size: 1.5rem;
     }
+    .about-glob-2 img{
+        width: 3.5rem !important; 
+        position: absolute; 
+        left: 6%;
+        top: -31px !important;
+    }
+    .about-glob-7{
+        background-color: orange;
+        width: 3rem !important;
+        height: 3rem !important;
+        position: absolute;
+        right: 1% !important;
+        border-radius: 50%;
+    }
 }
 
+.about-glob-2 img{
+    width: 5rem; 
+    position: absolute; 
+    left: 6%;
+    transition: 1s ease-in-out;
+    animation: lds-ellipsis2 10s linear 0.1s infinite;
+
+}
+
+.about-glob-3 img{
+    position: absolute;
+    width: 5rem;
+    bottom: -37px;
+    left: 8%;
+    transition: 1s ease-in-out;
+    animation: lds-ellipsis2 10s linear 1s infinite;
+
+}
+.about-glob-4{
+    background-color: orange;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    right: 30%;
+    border-radius: 50%;
+    top: 0;
+    transition: 1s ease-in-out;
+    animation: lds-ellipsis2 10s linear 3s infinite;
+
+}
+.about-glob-5{
+    position: absolute;
+    width: 5rem;
+   
+    left: -1px;
+    transition: 1s ease-in-out;
+    animation: lds-ellipsis2 10s linear 0.1s infinite;
+
+}
+
+.about-glob-6{
+    background-color: orange;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    right: 20%;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+    animation: lds-ellipsis2 10s linear 1s infinite;
+
+}
+.about-glob-7{
+    background-color: orange;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 3%;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+    animation: lds-ellipsis2 10s linear 0.5s infinite;
+
+}
+.about-glob-8{
+    width: 5rem;
+    height: 5rem;
+    background-color: orange;
+    position: absolute;
+    right: 10%;
+    border-radius: 50%;
+    margin-top: 6%;
+    transition: 1s ease-in-out;
+    animation: lds-ellipsis2 10s linear 0.1s infinite;
+
+
+}
+@-webkit-keyframes up-down {
+    0% {
+      -webkit-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -webkit-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -webkit-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -webkit-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -webkit-transform:  translate(1px,22px)  ;
+    }
+  }
+
+
+  @keyframes LeftA{
+    0%{
+        opacity: 0;
+        transform: translateX(-15px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+  @keyframes RightA{
+    0%{
+        opacity: 0;
+        transform: translateX(15px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+      transform: translateY(1.5rem);
+    }
+    50% {
+      transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(1.5rem);
+      }
+  }
+@keyframes BG-Image {
+    0% {
+      transform: translateY(0.4rem);
+    }
+    50% {
+      transform: translateY(-0.4rem);
+    }
+    100% {
+        transform: translateY(0.4rem);
+      }
+  }

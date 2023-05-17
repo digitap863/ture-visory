@@ -13,31 +13,47 @@
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel="stylesheet" type="text/css" href="css/testimonial.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
+<style>
+    body{
+        color: #636363 !important;
+    }
+    h2{
+        color: #252525 !important;
+    }
+</style>
 <body style="padding-bottom: 3rem;">
+    <div class="overlay">
+        <div class="overlayAnimation">
+            <div id="loading"></div>
+        </div>
+    </div>
+    <script src="script/loadingAnimation.js"></script>
     <section class="mainSec" style="background: #FAF5FF;">
-        <div class="header">
+        <div class="header" style="background:#FAF5FF;position: fixed;width: 100%;top: 0;">
             <div class="logoSection">
-                <img src="assets/logos/image-3.png" style="width: 16rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
+                <img src="assets/logos/image-3.png"
+                    style="width: 16rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
             </div>
             <div class="navSection">
                 <a class="nav " href="index.html">Home</a>
                 <a class="nav " href="about.html">About Us</a>
                 <a class="nav" href="careers.html">Career</a>
-                <a class="nav active" href="blogs.html">Blogs</a>
+                <a class="nav" href="blogs.html">Blogs</a>
                 <a class="nav" href="contacts.html">Contact Us</a>
                 <a class="ctaBtn" href="courses.html">Our Courses</a>
 
             </div>
-            <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
+            <img src="assets/icone/Group 10086.png" class="navHamBurger" alt="">
         </div>
 
-        <div class="blogSingle" style="display: flex;width: 100%;align-items: center;justify-content: center;">
-            <div class="blogSingleContainer" style="width: 80%;display: flex;column-gap: 1rem;">
+        <div class="blogSingle" style="display: flex;width: 100%;align-items: center;justify-content: center;padding-top: 6rem;">
+            <div class="blogSingleContainer" style="width: 90%;display: flex;column-gap: 1rem;">
                 <div class="mainSection">
-                    <div style="width: 100%;aspect-ratio: 1/0.5;background-color: #CCCCCC;"></div>
+                    <div style="width: 100%;aspect-ratio: 1/0.5;background: url(assets/banner/Frame-676..png);background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
                     <div style="width: 100%;">
                         <h2 style="margin-bottom: 1rem;">Standard Post Format</h2>
                         <span style="color: #BBC7CD;">20 September</span>
@@ -70,8 +86,8 @@
                         </p>
                     </div>
                     <div style="width: 100%;display: flex;justify-content: space-between;">
-                        <div style="width: 48%;aspect-ratio: 1/0.8;background-color: #CCCCCC;"></div>
-                        <div style="width: 48%;aspect-ratio: 1/0.8;background-color: #CCCCCC;"></div>
+                        <div style="width: 48%;aspect-ratio: 1/0.8;background: url(assets/banner/Image.png);background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+                        <div style="width: 48%;aspect-ratio: 1/0.8;background: url(assets/banner/Image.png);background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
                     </div>
                     <div>
                         <p>quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem
@@ -81,7 +97,7 @@
                             consequat, vel illum dolore.
                         </p>
                     </div>
-                    <div style="display: flex;justify-content: space-between;">
+                    <div class="middleArticleSec" style="display: flex;justify-content: space-between;">
                         <p style="width: 50%;">Lorem ipsum dolor sit amet, consectetuer
                             adipiscing elit, sed diam nonummy
                             nibh euismod tincidunt ut laoreet
@@ -93,7 +109,7 @@
                             molestie consequat autem vel eum iriure
                             dolor in hendrerit in vulpu
                         </p>
-                        <div style="background-color: #E4E4E4;width: 50%;aspect-ratio: 1/0.6;">
+                        <div style="background: url(assets/banner/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking\ 3.png);background-position: center;background-size: cover;background-repeat: no-repeat;;width: 50%;aspect-ratio: 1/0.6;">
 
                         </div>
                     </div>
@@ -114,9 +130,95 @@
                         </p>
                     </div>
                 </div>
-                <div class="articleSection" style="height: 100vh;background-color: rgba(0,0,0,0.2);">
+                <div class="articleSectionSide">
+                    <h2>More Articles & Blogs</h2>
+                    <div class="cardContainer">
+                        <div class="card" style="background: url(assets/images/Rectangle\ 33.png);background-repeat: no-repeat">
+                            <div>
+                                <span>MARKETING</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                <span>Nov 29  .  10 Min Read</span>
+                            </div>   
+                        </div>
 
+                        <div class="card" style="background: url(assets/images/Rectangle\ 33.png);background-repeat: no-repeat">
+                            <div>
+                                <span>MARKETING</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                <span>Nov 29  .  10 Min Read</span>
+                            </div>   
+                        </div>
+
+                        <div class="card" style="background: url(assets/images/Rectangle\ 33.png);background-repeat: no-repeat">
+                            <div>
+                                <span>MARKETING</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                <span>Nov 29  .  10 Min Read</span>
+                            </div>   
+                        </div>
+
+                        <div class="card" style="background: url(assets/images/Rectangle\ 33.png);background-repeat: no-repeat">
+                            <div>
+                                <span>MARKETING</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                <span>Nov 29  .  10 Min Read</span>
+                            </div>   
+                        </div>
+                    </div>
+                    <span class="viewBtn">
+                        View More
+                    </span>
                 </div>
+                <section class="articles-blogs articleSectionSideResp">
+                    <h2>More Articles and Blogs</h2>
+                
+                    <div class="slider-container swiper">
+                        <div class="slider-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="carder swiper-slide article-slider"
+                                    style="background-image: url(./assets/blog/Rectangle\ 33.png); ">
+        
+                                    <div>
+                                        <span>MARKETING</span>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                        <span>Nov 29  .  10 Min Read</span>
+                                    </div>   
+                                </div>
+
+                                <div class="carder swiper-slide article-slider"
+                                    style="background-image: url(./assets/blog/Rectangle\ 33.png); ">
+        
+                                    <div>
+                                        <span>MARKETING</span>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                        <span>Nov 29  .  10 Min Read</span>
+                                    </div>   
+                                </div><div class="carder swiper-slide article-slider"
+                                style="background-image: url(./assets/blog/Rectangle\ 33.png); ">
+    
+                                <div>
+                                    <span>MARKETING</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                    <span>Nov 29  .  10 Min Read</span>
+                                </div>   
+                            </div><div class="carder swiper-slide article-slider"
+                            style="background-image: url(./assets/blog/Rectangle\ 33.png); ">
+
+                            <div>
+                                <span>MARKETING</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                                <span>Nov 29  .  10 Min Read</span>
+                            </div>   
+                        </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-button-nex swiper-navBtn"><img src="./assets/icone/Polygon 3 (1).png" /></div>
+                        <div class="swiper-button-pre swiper-navBtn"><img src="./assets/icone/Polygon 2 (1).png" /></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+        
+                </section>
             </div>
 
         </div>
@@ -220,7 +322,16 @@
             }
 
         })
+
+        document.querySelectorAll('.nav').forEach((item) => {
+            item.style.color = '#CFC0DE'
+        });
+        document.querySelectorAll('.nav')[3].style.color = 'white';
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/carousel.js"></script>
+    <script src="./script/testimonials.js"></script>
+    <script src="./script/blogcarousel.js"></script>
 </body>
 
 

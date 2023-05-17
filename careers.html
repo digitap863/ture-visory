@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/careers.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="css/homeMain.css">
+
 
 
 
@@ -26,23 +28,30 @@
 </head>
 
 <body>
+    <div class="overlay">
+        <div class="overlayAnimation">
+            <div id="loading"></div>
+        </div>
+    </div>
+    <script src="script/loadingAnimation.js"></script>
     <main>
         <!-- Header-section -->
         <section>
-            <div class="header">
+            <div class="header" style="width: 100%;top: 0;padding-bottom: 1rem;">
                 <div class="logoSection">
-                    <img src="assets/logos/image-3.png" style="width: 16rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
+                    <img src="assets/logos/image-3.png"
+                        style="width: 16rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
                 </div>
                 <div class="navSection">
                     <a class="nav " href="index.html">Home</a>
                     <a class="nav " href="about.html">About Us</a>
-                    <a class="nav active" href="careers.html">Career</a>
-                    <a class="nav " href="blogs.html">Blogs</a>
+                    <a class="nav" style="color: #FAF5FF !important" href="careers.html">Career</a>
+                    <a class="nav" href="blogs.html">Blogs</a>
                     <a class="nav" href="contacts.html">Contact Us</a>
                     <a class="ctaBtn" href="courses.html">Our Courses</a>
     
                 </div>
-                <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
+                <img src="assets/icone/Group 10086.png" class="navHamBurger" alt="">
             </div>
         </section>
         <!-- Header-section-- end -->
@@ -224,6 +233,12 @@
     function singleCareer(){
         window.location.href="/single-career-Page.html"
     }
+
+    document.querySelectorAll('.nav').forEach((item) => {
+        item.style.color = '#CFC0DE'
+    });
+    document.querySelectorAll('.nav')[2].style.color = 'white';
+
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./script/value.js"></script>

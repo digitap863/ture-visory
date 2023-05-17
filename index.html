@@ -13,24 +13,32 @@
 </head>
 
 <body>
+<div class="overlay">
+        <div class="overlayAnimation">
+            <div id="loading"></div>
+        </div>
+</div>
+<script src="script/loadingAnimation.js"></script>
+
     <section class="mainSec"
-        style="background: url(assets/banner/home-background.png);background-position: bottom center;background-size: cover;background-repeat: no-repeat;padding-bottom: 4rem;">
+        style="background: url(assets/banner/home-background.png);background-position: bottom center;padding-top: 8rem;background-size: cover;background-repeat: no-repeat;padding-bottom: 4rem;">
         <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
-            <div class="header">
+            <div class="header" style="position: absolute; z-index: 110;top: 0;left:0;width: 100%;">
                 <div class="logoSection">
-                    <img src="assets/logos/Frame 676..png" style="width: 13rem; margin-top: 2.5rem; margin-left: 2rem !important;" alt="">
+                  <img src="assets/logos/Frame 676..png" style="width: 14rem; margin-top: 2.5rem; margin-left: 2rem !important;"
+                    alt="">
                 </div>
                 <div class="navSection">
-                    <a class="nav " href="index.html">Home</a>
-                    <a class="nav " href="about.html">About Us</a>
-                    <a class="nav active" href="careers.html">Career</a>
-                    <a class="nav " href="blogs.html">Blogs</a>
-                    <a class="nav" href="contacts.html">Contact Us</a>
-                    <a class="ctaBtn" href="courses.html">Our Courses</a>
-    
+                  <a class="nav " href="index.html">Home</a>
+                  <a class="nav " href="about.html">About Us</a>
+                  <a class="nav" href="careers.html">Career</a>
+                  <a class="nav" href="blogs.html">Blogs</a>
+                  <a class="nav" href="contacts.html">Contact Us</a>
+                  <a class="ctaBtn" href="courses.html">Our Courses</a>
+          
                 </div>
                 <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
-            </div>
+              </div>
             <div class="SliderSection">
                 <div class="mainSlide">
 
@@ -53,7 +61,7 @@
             <span class="prevButtonResp"></span>
             <span class="nextButtonResp"></span>
         </div>
-        
+
 
     </section>
 </body>
@@ -152,22 +160,22 @@
             }, 300)
         }
     }
-    var interval;
-    interval = setInterval(() => {
-        nextSlide();
-        nextResp();
-    }, 4000);
+    // var interval;
+    // interval = setInterval(() => {
+    //     nextSlide();
+    //     nextResp();
+    // }, 4000);
 
-    document.querySelector('.subSlider').addEventListener('mouseenter', () => {
-        clearInterval(interval)
+    // document.querySelector('.subSlider').addEventListener('mouseenter', () => {
+    //     clearInterval(interval)
 
-    })
-    document.querySelector('.subSlider').addEventListener('mouseleave', () => {
-        interval = setInterval(() => {
-            nextSlide();
-            nextResp();
-        }, 1000);
-    })
+    // })
+    // document.querySelector('.subSlider').addEventListener('mouseleave', () => {
+    //     interval = setInterval(() => {
+    //         nextSlide();
+    //         nextResp();
+    //     }, 1000);
+    // })
 
     nextButton.addEventListener('click', () => {
         nextSlide();
@@ -226,7 +234,7 @@
                                 <h1>${subSliderContent[i].title}</h1>
                                 <p>${subSliderContent[i].contentSmall}</p>
                                 <span>${subSliderContent[i].amount}</span>
-                                <a href="">Enrol Now</a>
+                                <a href="animation.html">Enrol Now</a>
                             </div>
                             <img src="${subSliderContent[i].image}" alt="">
                         </div>
@@ -240,7 +248,7 @@
                                 <h1>${subSliderContent[i].title}</h1>
                                 <p>${subSliderContent[i].contentSmall}</p>
                                 <span>${subSliderContent[i].amount}</span>
-                                <a href="">Enrol Now</a>
+                                <a href="animation.html">Enrol Now</a>
                             </div>
                             <img src="${subSliderContent[i].image}" alt="">
                         </div>
@@ -260,7 +268,7 @@
                             <h1>${subSliderContent[val].title}</h1>
                             <p>${subSliderContent[val].contentFull}</p>
                             <span>${subSliderContent[val].amount}</span>
-                            <a href="">Enrol Now</a>
+                            <a href="animation.html">Enrol Now</a>
                         </div>
                     </div>`
     }
@@ -273,35 +281,46 @@
 
 </script>
 <script>
-    
-let btn = document.querySelector('.content').querySelectorAll('span')
-btn.forEach((item) => {
-    item.addEventListener('click', () => {
-        window.location.href = 'blogSingle.html'
+
+    let btn = document.querySelector('.content').querySelectorAll('span')
+    btn.forEach((item) => {
+        item.addEventListener('click', () => {
+            window.location.href = 'blogSingle.html'
+        })
     })
-})
 
-const navHamBurger = document.querySelector('.navHamBurger')
-const header = document.querySelector('.header')
-let navState = false
-navHamBurger.addEventListener('click', () => {
-    if (!navState) {
-        header.style.height = '25rem'
-        navState = true;
-    } else {
-        header.style.height = '6rem'
-        navState = false;
-    }
+    const navHamBurger = document.querySelector('.navHamBurger')
+    const header = document.querySelector('.header')
+    let navState = false
+    navHamBurger.addEventListener('click', () => {
+        if (!navState) {
+            header.style.height = '25rem'
+            header.style.backgroundColor='rgb(106 96 116)'
+            navState = true;
+        } else {
+            header.style.height = '6rem'
+            header.style.backgroundColor='transparent'
 
-})
+            navState = false;
+        }
+
+    })
+    document.querySelectorAll('.nav').forEach((item) => {
+        item.style.color = '#CFC0DE'
+    });
+    document.querySelectorAll('.nav')[0].style.color = 'white';
 
 
 
 </script>
 <script>
-    function  singleCourse(){
-      window.location.href="/animation.html"
+    function singleCourse() {
+        window.location.href = "/animation.html"
     }
-    </script>
+</script>
+<script>
+    
+</script>
+<script src="script/header.js"></script>
 
 </html>

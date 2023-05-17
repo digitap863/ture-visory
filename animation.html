@@ -27,20 +27,21 @@
     <main>
         <!-- Header-section -->
         <section>
-            <div class="header">
+            <div class="header" style="width: 100%;top: 0;">
                 <div class="logoSection">
-                    <img src="assets/logo/Frame 676..png" alt="">
+                    <img src="assets/logos/image-3.png"
+                        style="width: 16rem; margin-top: 2rem; margin-left: 1.5rem !important;" alt="">
                 </div>
                 <div class="navSection">
                     <a class="nav " href="index.html">Home</a>
-                    <a class="nav" href="about.html">About Us</a>
+                    <a class="nav " href="about.html">About Us</a>
                     <a class="nav" href="careers.html">Career</a>
-                    <a class="nav" href="blogs.html">Blogs</a>
+                    <a class="nav"  href="blogs.html">Blogs</a>
                     <a class="nav" href="contacts.html">Contact Us</a>
                     <a class="ctaBtn" href="courses.html">Our Courses</a>
-
+    
                 </div>
-                <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
+                <img src="assets/icone/Group 10086.png" class="navHamBurger" alt="">
             </div>
         </section>
 
@@ -162,7 +163,7 @@
                                             Explore the guide below for an overview of the most popular game mode.</p>
                                         <div class="inner-content">
                                             <p>545k+ Sold</p>
-                                            <button> Enrol Now </button>
+                                            <button onclick="Next()"> Enrol Now </button>
                                         </div>
                                     </div>
                                 </div>
@@ -175,7 +176,7 @@
                                             Explore the guide below for an overview of the most popular game mode.</p>
                                         <div class="inner-content">
                                             <p>545k+ Sold</p>
-                                            <button> Enrol Now </button>
+                                            <button onclick="Next()"> Enrol Now </button>
                                         </div>
                                     </div>
 
@@ -191,7 +192,7 @@
                                             Explore the guide below for an overview of the most popular game mode.</p>
                                         <div class="inner-content">
                                             <p>545k+ Sold</p>
-                                            <button> Enrol Now </button>
+                                            <button onclick="Next()"> Enrol Now </button>
                                         </div>
                                     </div>
                                 </div>
@@ -376,6 +377,29 @@
         <!-- blog section end -->
     </main>
 </body>
+<script>
+     const navHamBurger = document.querySelector('.navHamBurger')
+    const header = document.querySelector('.header')
+    let navState = false
+    navHamBurger.addEventListener('click', () => {
+        if (!navState) {
+            header.style.height = '25rem'
+            header.style.backgroundColor = 'rgb(106 96 116)'
+            navState = true;
+        } else {
+            header.style.height = '6rem'
+            header.style.backgroundColor = 'transparent'
+
+            navState = false;
+        }
+
+    })
+</script>
+<script>
+    function Next(){
+        window.location.href="/animation.html"
+    }
+</script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./script/course.js"></script>

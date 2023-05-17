@@ -64,6 +64,8 @@
     width: 50%;
     object-fit: contain;
     margin-left: 20px;
+    animation: LeftA 2s linear 2s ;
+    transition: 2s ease-in-out;
 }
 .image-section{
     display: flex;
@@ -224,3 +226,27 @@
 
 }
 
+@keyframes LeftA{
+    0%{
+        opacity: 0;
+        transform: translateX(-15px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+  @keyframes RightA{
+    0%{
+        opacity: 0;
+        transform: translateX(15px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

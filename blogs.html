@@ -15,26 +15,41 @@
     <link rel="stylesheet" type="text/css" href="css/testimonial.css">
 
 </head>
+<style>
+    body{
+        color: #4A4A4A !important;
+    }
+    h2{
+        color: #0B0B0B !important;
+    }
+</style>
 
 <body style="padding-bottom: 3rem;">
+    <div class="overlay">
+        <div class="overlayAnimation">
+            <div id="loading"></div>
+        </div>
+    </div>
+    <script src="script/loadingAnimation.js"></script>
     <section class="mainSec" style="background: #FAF5FF;">
-        <div class="header">
+        <div class="header" style="background:#FAF5FF;position: fixed;width: 100%;top: 0;">
             <div class="logoSection">
-                <img src="assets/logos/image-3.png" style="width: 16rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
+                <img src="assets/logos/image-3.png"
+                    style="width: 16rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
             </div>
             <div class="navSection">
                 <a class="nav " href="index.html">Home</a>
                 <a class="nav " href="about.html">About Us</a>
                 <a class="nav" href="careers.html">Career</a>
-                <a class="nav active" href="blogs.html">Blogs</a>
+                <a class="nav"  href="blogs.html">Blogs</a>
                 <a class="nav" href="contacts.html">Contact Us</a>
                 <a class="ctaBtn" href="courses.html">Our Courses</a>
 
             </div>
-            <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
+            <img src="assets/icone/Group 10086.png" class="navHamBurger" alt="">
         </div>
 
-        <div style="margin-top: 4rem;">
+        <div style="padding-top: 8rem;">
             <h2 style="color:#724D99;text-align: center;">Blogs</h2>
             <p style="text-align: center;margin-top: 1rem;">lorrem ipsum data all</p>
         </div>
@@ -48,7 +63,7 @@
                         <h2>get some weight off feet</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of
                             a page when looking at its layout. The point of using Lorem Ipsum</p>
-                        <div><span>VIEW PROJECT</span></div>
+                        <div><span class="viewProject">VIEW PROJECT</span></div>
                     </div>
 
                 </div>
@@ -67,7 +82,7 @@
                         <h2>get some weight off feet</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of
                             a page when looking at its layout. The point of using Lorem Ipsum</p>
-                        <div><span>VIEW PROJECT</span></div>
+                        <div><span class="viewProject">VIEW PROJECT</span></div>
                     </div>
                 </div>
 
@@ -82,7 +97,7 @@
                         <h2>get some weight off feet</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of
                             a page when looking at its layout. The point of using Lorem Ipsum</p>
-                        <div><span>VIEW PROJECT</span></div>
+                        <div><span class="viewProject">VIEW PROJECT</span></div>
                     </div>
                 </div>
                 <div class="imgDiv" style="background: url(assets/images/Image.png);">
@@ -102,7 +117,7 @@
                         <h2>get some weight off feet</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of
                             a page when looking at its layout. The point of using Lorem Ipsum</p>
-                        <div><span>VIEW PROJECT</span></div>
+                        <div><span class="viewProject">VIEW PROJECT</span></div>
                     </div>
                 </div>
 
@@ -194,14 +209,34 @@
         </div>
 
     </footer>
-<script src="./script/header.js"></script>
+    <script src="./script/header.js"></script>
     <script>
-        let btn = document.querySelector('.content').querySelectorAll('span')
+        let btn = document.querySelectorAll(".viewProject")
         btn.forEach((item) => {
             item.addEventListener('click', () => {
+                console.log('hey');
                 window.location.href = 'blogSingle.html'
             })
         })
+
+        const navHamBurger = document.querySelector('.navHamBurger')
+        const header = document.querySelector('.header')
+        let navState = false
+        navHamBurger.addEventListener('click', () => {
+            if (!navState) {
+                header.style.height = '25rem'
+                navState = true;
+            } else {
+                header.style.height = '6rem'
+                navState = false;
+            }
+
+        })
+
+        document.querySelectorAll('.nav').forEach((item) => {
+            item.style.color = '#CFC0DE'
+        });
+        document.querySelectorAll('.nav')[3].style.color = 'white';
 
     </script>
 </body>

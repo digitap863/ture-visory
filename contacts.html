@@ -9,25 +9,34 @@
   <link rel="stylesheet" href="css/contacts.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet"  href="css/homeMain.css">
+
 </head>
 
 <body>
+  <div class="overlay">
+    <div class="overlayAnimation">
+        <div id="loading"></div>
+    </div>
+</div>
+<script src="script/loadingAnimation.js"></script>
   <section class="mainSec" style="position: relative;">
-    <div class="header" style="position: absolute; z-index: 1;">
+    <div class="header" style="position: absolute; z-index: 100;top: 0;left:0;width: 100%;">
       <div class="logoSection">
-          <img src="assets/logos/Frame 676..png" style="width: 14rem; margin-top: 2.5rem; margin-left: 2rem !important;" alt="">
+        <img src="assets/logos/Frame 676..png" style="width: 14rem; margin-top: 2.5rem; margin-left: 2rem !important;"
+          alt="">
       </div>
       <div class="navSection">
-          <a class="nav " href="index.html">Home</a>
-          <a class="nav " href="about.html">About Us</a>
-          <a class="nav" href="careers.html">Career</a>
-          <a class="nav active" href="blogs.html">Blogs</a>
-          <a class="nav" href="contacts.html">Contact Us</a>
-          <a class="ctaBtn" href="courses.html">Our Courses</a>
+        <a class="nav " href="index.html">Home</a>
+        <a class="nav " href="about.html">About Us</a>
+        <a class="nav" href="careers.html">Career</a>
+        <a class="nav" href="blogs.html">Blogs</a>
+        <a class="nav" href="contacts.html">Contact Us</a>
+        <a class="ctaBtn" href="courses.html">Our Courses</a>
 
       </div>
       <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
-  </div>
+    </div>
     <div class="bannerContainer">
       <img src="./assets/banner/banner.png" alt="" />
 
@@ -120,7 +129,7 @@
   </section>
 
   <!-- fooer section added -->
-  <footer>
+  <footer style="margin-top: 43%;padding-bottom: 3rem;">
     <div class="footer-section">
       <div class="logo-section">
         <img class="footer-logo" src="./assets/logos/image-3.png" />
@@ -158,18 +167,25 @@
 
 </body>
 <script>
-              const navHamBurger = document.querySelector('.navHamBurger')
-        const header = document.querySelector('.header')
-        let navState = false
-        navHamBurger.addEventListener('click', () => {
-            if (!navState) {
-                header.style.height = '25rem'
-                navState = true;
-            } else {
-                header.style.height = '6rem'
-                navState = false;
-            }
+  const navHamBurger = document.querySelector('.navHamBurger')
+  const header = document.querySelector('.header')
+  let navState = false
+  navHamBurger.addEventListener('click', () => {
+    if (!navState) {
+            header.style.height = '25rem'
+            header.style.backgroundColor='rgb(106 96 116)'
+            navState = true;
+        } else {
+            header.style.height = '6rem'
+            header.style.backgroundColor='transparent'
+            navState = false;
+        }
 
-        })
+  })
+  document.querySelectorAll('.nav').forEach((item) => {
+    item.style.color = '#CFC0DE'
+  });
+  document.querySelectorAll('.nav')[4].style.color = 'white';
 </script>
+
 </html>

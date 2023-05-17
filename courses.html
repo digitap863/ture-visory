@@ -9,49 +9,42 @@
     <link rel="stylesheet" href="css/homeMain.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/homeMain.css">
 
-    <script>
-        const navHamBurger = document.querySelector('.navHamBurger')
-        const header = document.querySelector('.header')
-        let navState = false
-        navHamBurger.addEventListener('click', () => {
-            if (!navState) {
-                header.style.height = '25rem'
-                navState = true;
-            } else {
-                header.style.height = '6rem'
-                navState = false;
-            }
 
-        })
-    </script>
 
 </head>
 
 <body style="background-color: #E7DDF3;">
+    <div class="overlay">
+        <div class="overlayAnimation">
+            <div id="loading"></div>
+        </div>
+    </div>
+    <script src="script/loadingAnimation.js"></script>
     <section class="mainSec"
         style="background-color: #E7DDF3;display: flex;align-items: center;justify-content: center;flex-direction: column;">
         <div class="headerContainer"
             style="display: flex;align-items: center;justify-content: start;flex-direction: column;background: url(assets/banner/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking\ 3.png);background-position: top center;background-size: cover;background-repeat: no-repeat;height: 25rem;border-bottom-left-radius: 20rem;width: 100%;">
-            <div class="header">
+            <div class="header" style="background:#FAF5FF;position: fixed;width: 100%;top: 0;">
                 <div class="logoSection">
-                    <img src="assets/logos/Frame 676..png"
-                        style="width: 13rem; margin-top: 2.5rem; margin-left: 2rem !important;" alt="">
+                    <img src="assets/logos/image-3.png"
+                        style="width: 16rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
                 </div>
                 <div class="navSection">
                     <a class="nav " href="index.html">Home</a>
                     <a class="nav " href="about.html">About Us</a>
-                    <a class="nav active" href="careers.html">Career</a>
-                    <a class="nav " href="blogs.html">Blogs</a>
+                    <a class="nav" href="careers.html">Career</a>
+                    <a class="nav"  href="blogs.html">Blogs</a>
                     <a class="nav" href="contacts.html">Contact Us</a>
                     <a class="ctaBtn" href="courses.html">Our Courses</a>
-
+    
                 </div>
-                <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
+                <img src="assets/icone/Group 10086.png" class="navHamBurger" alt="">
             </div>
 
             <div class="bannerContentCourses"
-                style="display: flex;align-items: center;justify-content: center;column-gap: 8rem;">
+                style="display: flex;align-items: center;justify-content: center;column-gap: 8rem;margin-top: 8rem;">
                 <img style="width: 20rem;" src="assets/images/Text input container.svg" alt="">
                 <p style="font-size: 2rem;color: white;font-weight: 600;max-width: 50%;">Edu is one of the best world
                     best virtual learning network eLearning</p>
@@ -67,7 +60,39 @@
             <span id="logistics">Logistics</span>
         </div>
         <div class="courseContainer">
-            <div class="subSlide all fashioDesigning" data="">
+            <div class="subSlide course-card all logistics" data="">
+                <div class="subSlideMain " style="background: url(assets/images/Section-3.png);">
+                    <div class="contentSub">
+                        <h1>Logistics</h1>
+                        <p>There's a lot to learn about LoL, so we'll start with the essentials.</p>
+                        <div class="inner-content"><span>545k+ Sold</span>
+                            <a href="animation.html">Enrol Now</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subSlide course-card all fashioDesigning" data="">
+                <div class="subSlideMain" style="background: url(assets/images/Section..png);">
+                    <div class="contentSub">
+                        <h1>Fashion Designer</h1>
+                        <p>There's a lot to learn about LoL, so we'll start with the essentials.</p>
+                        <div class="inner-content"><span>545k+ Sold</span>
+                            <a href="animation.html">Enrol Now</a></div>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="subSlide course-card all accounting" data="">
+                <div class="subSlideMain" style="background: url(assets/images/Section-2.png);">
+                    <div class="contentSub">
+                        <h1>Accounting</h1>
+                        <p>There's a lot to learn about LoL, so we'll start with the essentials.</p>
+                        <div class="inner-content"><span>545k+ Sold</span>
+                        <a href="animation.html">Enrol Now</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div class="subSlide all fashioDesigning" data="">
                 <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
                     <div class="contentSub">
                         <h1>Fashion Designer</h1>
@@ -78,39 +103,6 @@
                     <img src="assets/courses/lady-2.png" alt="">
                 </div>
             </div>
-            <div class="subSlide all fashioDesigning" data="">
-                <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
-                    <div class="contentSub">
-                        <h1>Fashion Designer</h1>
-                        <p>There's a lot to learn about LoL, so we'll start with the essentials.</p>
-                        <span>545k+ Sold</span>
-                        <a href="">Enrol Now</a>
-                    </div>
-                    <img src="assets/courses/lady-2.png" alt="">
-                </div>
-            </div>
-            <div class="subSlide all fashioDesigning" data="">
-                <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
-                    <div class="contentSub">
-                        <h1>Fashion Designer</h1>
-                        <p>There's a lot to learn about LoL, so we'll start with the essentials.</p>
-                        <span>545k+ Sold</span>
-                        <a href="">Enrol Now</a>
-                    </div>
-                    <img src="assets/courses/lady-2.png" alt="">
-                </div>
-            </div>
-            <div class="subSlide all fashioDesigning" data="">
-                <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
-                    <div class="contentSub">
-                        <h1>Fashion Designer</h1>
-                        <p>There's a lot to learn about LoL, so we'll start with the essentials.</p>
-                        <span>545k+ Sold</span>
-                        <a href="">Enrol Now</a>
-                    </div>
-                    <img src="assets/courses/lady-2.png" alt="">
-                </div>
-            </div>
             <div class="subSlide all accounting" data="">
                 <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
                     <div class="contentSub">
@@ -259,9 +251,9 @@
                     </div>
                     <img src="assets/courses/lady-2.png" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div style="display: flex;align-items: center;justify-content: center;width: 100%;">
+        <!-- <div style="display: flex;align-items: center;justify-content: center;width: 100%;">
             <div class="pagination">
                 <div class="left">
                     <span style="color: #747A8B;font-size: 0.8rem;">Showing</span>
@@ -279,7 +271,7 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </section>
 
@@ -382,10 +374,9 @@
     </footer>
 </body>
 
-<script src="./script/header.js"></script>
 <script>
 
-
+    
 
     const fashionDesigning = document.querySelectorAll('.fashioDesigning')
     const all = document.querySelectorAll('.all')
@@ -452,6 +443,7 @@
         }, 500)
     })
 
+
     document.querySelector('#logistics').addEventListener('click', () => {
         removeStyle()
         document.querySelector('#logistics').style.textDecoration = 'underline'
@@ -469,7 +461,29 @@
             })
         }, 500)
     })
+
+
 </script>
+
+<script>
+    const navHamBurger = document.querySelector('.navHamBurger')
+    const header = document.querySelector('.header')
+    let navState = false
+    navHamBurger.addEventListener('click', () => {
+        if (!navState) {
+            header.style.height = '25rem'
+            header.style.backgroundColor = 'rgb(106 96 116)'
+            navState = true;
+        } else {
+            header.style.height = '6rem'
+            header.style.backgroundColor = 'transparent'
+
+            navState = false;
+        }
+
+    })
+</script>
+
 
 
 </html>

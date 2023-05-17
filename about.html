@@ -17,21 +17,30 @@
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel="stylesheet" type="text/css" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/homeMain.css">
     <title>True Visory</title>
 </head>
 
 <body>
+    <div class="overlay">
+        <div class="overlayAnimation">
+            <div id="loading"></div>
+        </div>
+    </div>
+    <script src="script/loadingAnimation.js"></script>
+
     <main>
         <!-- banner-section -->
         <section class="banner-section">
-            <div class="container-curve">
-                <div class="header">
+            <div class="container-curve" style="padding-top: 15rem;">
+                <div class="header" style="position: absolute; z-index: 100;top: 0;left:0;width: 100%;">
                     <div class="logoSection">
-                        <img src="assets/logo/Frame 676..png" alt="">
+                        <img src="assets/logos/Frame 676..png"
+                            style="width: 14rem; margin-top: 2.5rem; margin-left: 2rem !important;" alt="">
                     </div>
                     <div class="navSection">
                         <a class="nav " href="index.html">Home</a>
-                        <a class="nav active" href="about.html">About Us</a>
+                        <a class="nav " href="about.html">About Us</a>
                         <a class="nav" href="careers.html">Career</a>
                         <a class="nav" href="blogs.html">Blogs</a>
                         <a class="nav" href="contacts.html">Contact Us</a>
@@ -68,6 +77,9 @@
                 <div class="about-glob-1">
                     <img src="./assets/glob/Ellipse 1.png" />
                 </div>
+                <div class="about-glob-2">
+                    <img src="./assets/glob/Ellipse 4.png" />
+                </div>
                 <div class="left-section">
                     <img src="./assets/banner/banner-image-2.png" class="about-image" />
                 </div>
@@ -82,6 +94,9 @@
                     <button>Read More&gt;</button>
 
                 </div>
+                <div class="about-glob-3">
+                    <img src="./assets/glob/Ellipse 75.png" />
+                </div>
             </div>
         </section>
         <!-- About-section-end -->
@@ -90,6 +105,8 @@
         <!-- course-section-started -->
         <section>
             <div class="course-section">
+                <div class="about-glob-4">
+                </div>
 
                 <!-- <div class="course-globe-1"> <img src="" /></div> -->
                 <div class="course-container">
@@ -230,6 +247,9 @@
         <!-- available medium section started -->
         <section>
             <div class="learn-with-us">
+                <div class="about-glob-5">
+                    <img src="./assets/glob/Group 643.png">
+                </div>
                 <h2>Learn with us</h2>
                 <div class="first-row">
                     <div class="image-1"><img src="./assets/images/image 9.png" /></div>
@@ -249,6 +269,9 @@
         <!-- testimonial section started -->
         <section>
             <div class="testimonial-section">
+                <div class="about-glob-6">
+
+                </div>
                 <div class="testimonial_slider_2">
                     <input type="radio" name="slider_2" id="slide_2_1" checked />
                     <input type="radio" name="slider_2" id="slide_2_2" />
@@ -344,6 +367,8 @@
         <!-- request a callback  started-->
         <section>
             <div class="callback-back-section">
+                <div class="about-glob-7">
+                </div>
                 <h2>REQUEST A CALL BACK</h2>
                 <p class="request-p">By clicking Request a call back, you agree to our terms and conditions and our
                     privacy policy.</p>
@@ -385,6 +410,9 @@
 
                     </div>
                 </div>
+                <div class="about-glob-8">
+                </div>
+
             </div>
         </section>
         <!-- request a callback  end-->
@@ -487,16 +515,23 @@
     navHamBurger.addEventListener('click', () => {
         if (!navState) {
             header.style.height = '25rem'
+            header.style.backgroundColor = 'rgb(106 96 116)'
             navState = true;
         } else {
-            header.style.height = '5rem'
+            header.style.height = '6rem'
+            header.style.backgroundColor = 'transparent'
             navState = false;
         }
 
     })
 
-</script>
+    document.querySelectorAll('.nav').forEach((item) => {
+        item.style.color = '#CFC0DE'
+    });
+    document.querySelectorAll('.nav')[1].style.color = 'white';
 
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./script/carousel.js"></script>
 <script src="./script/testimonials.js"></script>
