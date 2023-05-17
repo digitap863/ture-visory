@@ -277,7 +277,10 @@
 
 @media (max-width:1135px) {
     .subSlideMain .contentSub{
-        height: 50%;
+        height: 65% !important;
+    }
+    .subSlideMain .card-content{
+height: 45% !important;
     }
     .mainSlideBanner .content{
         height: 55%;
