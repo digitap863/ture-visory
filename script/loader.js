@@ -1,10 +1,9 @@
-function showLoader(){
-    document.getElementsByClassName("loader").style.display='block'
-}
-function hideLoader(){
-    document.getElementsByClassName("loader").style.display='none'
-    document.getElementsByClassName("home-banner").style.display='block'
-}
-var body=document.getElementsByClassName('home-banner')
-body.addEventListener('load',hideLoader)
-showLoader()
+document.querySelector('body').style.height = '100vh'
+document.querySelector('body').style.overflow = 'hidden'
+document.querySelector('.overlay').style.display = 'flex'
+
+setTimeout(() => {
+    document.querySelector('body').style.overflow = 'initial'
+    document.querySelector('.overlay').style.display = 'none'
+    document.querySelector('body').style.height='fitContent'
+}, 3000);

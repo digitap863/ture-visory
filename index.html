@@ -274,9 +274,32 @@
     }
     mainSlideView(0);
 
+    var interval;
+    let slide = true;
+    interval = setInterval(() => {
+        if (slide) {
+            nextSlide();
+            nextResp();
+        }
+    }, 4000);
+    let btns = document.querySelector('.buttons').querySelectorAll('span')
 
-
-
+    btns.forEach((item) => {
+        item.addEventListener('mouseenter', () => {
+            slide=false;
+        })
+        item.addEventListener('mouseout', () => {
+            slide=true;
+        })
+    })
+    document.querySelectorAll('.mainSlide').forEach((item)=>{
+        item.addEventListener('mouseenter', () => {
+            slide=false;
+        })
+        item.addEventListener('mouseout', () => {
+            slide=true;
+        })
+    })
 
 
 </script>
