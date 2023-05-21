@@ -10,7 +10,7 @@
     flex-wrap: wrap;
 }
 .footer-section  div{
-    margin-top: 4%;
+    margin-top: 1%;
 }
 .footer-section .logo-section{
     width: 40%;
@@ -68,7 +68,7 @@
      font-size: 1.1rem;
  }
  .footer-section .copy-right p{
-    color: #000000;
+    color: #5f5656;
     font-size: 0.8rem;
  }
 .footer-section .copy-right{

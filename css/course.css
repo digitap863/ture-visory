@@ -17,11 +17,13 @@
   .slider-container-c .article-slider-c .content{
     display: flex;
     flex-direction: column;
+   
   }
   .slider-container-c .article-slider-c .content h5{ 
     color: #ffffff;
     font-weight: 700;
     font-size: 1.6rem;
+    margin-left: 2rem;
 
   }
   .slider-container-c .article-slider-c .content p{ 
@@ -32,7 +34,7 @@
   }
   .slider-container-c .article-slider-c .content .inner-content{ 
     display: flex;
-    width: 50%;
+    width: 65%;
     margin-bottom: 10px;
   }
   .slider-container-c .article-slider-c .content .inner-content p{ 

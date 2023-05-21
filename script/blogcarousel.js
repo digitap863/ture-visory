@@ -2,20 +2,26 @@ var swiper = new Swiper(".slider-content", {
     slidesPerView: 3,
     spaceBetween: 25,
     loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
+    centerSlide: "true",
+    fade: "true",
+    grabCursor: "true",
+    loop: true,
+    centerSlide: "true",
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
-      nextEl: ".swiper-button-nex",
-      prevEl: ".swiper-button-pre",
+        nextEl: ".swiper-button-nex",
+        prevEl: ".swiper-button-pre",
     },
 
-    breakpoints:{
+    breakpoints: {
         0: {
             slidesPerView: 1,
         },
@@ -26,5 +32,4 @@ var swiper = new Swiper(".slider-content", {
             slidesPerView: 3,
         },
     },
-  });
- 
+});

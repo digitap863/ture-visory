@@ -34,30 +34,31 @@
     <main>
         <!-- Header-section -->
         <section>
-            <div class="header" >
+            <div class="header" style="width: 100%;top: 0;">
                 <div class="logoSection">
-                    <img src="assets/logos/image-3.png" style="width: 14rem; margin-top: 1.5rem; margin-left: 2rem !important;" alt="">
+                    <img src="assets/logos/image-3.png"
+                        style="width: 16rem; margin-top: 2rem; margin-left: 1.5rem !important;" alt="">
                 </div>
                 <div class="navSection">
                     <a class="nav " href="index.html">Home</a>
                     <a class="nav " href="about.html">About Us</a>
-                    <a class="nav active" href="careers.html">Career</a>
-                    <a class="nav " href="blogs.html">Blogs</a>
+                    <a class="nav" href="careers.html">Career</a>
+                    <a class="nav"  href="blogs.html">Blogs</a>
                     <a class="nav" href="contacts.html">Contact Us</a>
                     <a class="ctaBtn" href="courses.html">Our Courses</a>
-          
+
                 </div>
-                <img src="assets/icone/Group.svg" class="navHamBurger" alt="">
+                <img src="assets/icone/Group 10086.png" class="navHamBurger" alt="">
             </div>
         </section>
         <!-- Header-section-- end -->
         <section class="main-content">
             <div class="pages-link">
-                <a href="#" style="color:rgba(135, 121, 179, 1);">Home</a>
+                <a href="index.html" style="color:rgba(135, 121, 179, 1);">Home</a>
                 <i style="color:rgba(135, 121, 179, 1);" class="fa-solid fa-greater-than"></i>
-                <a href="#" style="color:rgba(135, 121, 179, 1);">Courses</a>
+                <a href="careers.html" style="color:rgba(135, 121, 179, 1);">career</a>
                 <i style="color:rgba(135, 121, 179, 1);" class="fa-solid fa-greater-than "></i>
-                <a href="#" style="color:#000000;"> Animation</a>
+                <a href="/" style="color:#000000;"> single-career</a>
             </div>
 
             <div class="main-header">
@@ -127,37 +128,44 @@
             </div>
 
         </section>
-        <footer>
-            <div class="footer-section">
-                <div class="logo-section">
-                    <img class="footer-logo" src="./assets/logos/image-3.png" />
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been
-                        the industry's standard dummy text ever since the 1500s,</p>
-                    <div class="social-media-links">
-                        <div class="fab"><img src="./assets/logos/Group 21.png" /></div>
-                        <div class="fab"><img src="./assets/logos/Group 19.png" /></div>
-                        <div class="fab"><img src="./assets/logos/Group 20.png" /></div>
-                        <div class="fab"><img src="./assets/logos/Group 22.png" /></div>
-                    </div>
-                </div>
-                <div class="pages-link">
-                    <a href="#">About Us</a>
-                    <a href="#">Services</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Contact Us</a>
-                </div>
 
-                <div class="copy-right">
-                    <p>ALL COPYRIGHTS RESERVED @True VIsory</p>
-                    <p class="hidden">PRIVACY POLICY | DISCLAIMER</p>
-
-                </div>
-            </div>
-
-        </footer>
 
     </main>
+    <footer>
+        <div class="footer-section">
+            <div class="logo-section">
+                <img src="./assets/logos/Frame 676..png" style="width: 18rem;" />
+                <p>We are very particular about our courses equip the students with a thorough theoretical basis and
+                    excellent practical skills in their respective fields. This is the reason why True Visory
+                    remains the most sought-after place for freshers.</p>
+                <div class="social-media-links">
+                    <div class="fab"><img src="./assets/logos/Group 21.png" /></div>
+                    <div class="fab"><img src="./assets/logos/Group 19.png" /></div>
+                    <div class="fab"><img src="./assets/logos/Group 20.png" /></div>
+                    <div class="fab"><img src="./assets/logos/Group 22.png" /></div>
+                </div>
+            </div>
+            <div class="pages-link" style="width: 25%;">
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="policy-section" style="width: 23%;">
+                <a href="#">FAQ Glossary </a>
+                <a href="#">Privacy Policy </a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Equal Opportunity Policy</a>
+                <a href="#">Cookies Policy</a>
+            </div>
+            <div class="copy-right">
+                <p>ALL COPYRIGHTS RESERVED @True VIsory</p>
+                <p>PRIVACY POLICY | DISCLAIMER</p>
+
+            </div>
+        </div>
+
+    </footer>
 </body>
 <script>
     const navHamBurger = document.querySelector('.navHamBurger')
@@ -173,6 +181,12 @@
         }
 
     })
+
+    document.querySelectorAll('.nav').forEach((item) => {
+            item.style.color = '#724D99'
+        });
+        document.querySelectorAll('.nav')[2].style.color = '#c8cbe3';
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
