@@ -2,7 +2,7 @@
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    background: linear-gradient(93.56deg, #FF8F04 29.82%, rgba(249, 185, 0, 0.6) 104.94%);
+    background: orange;
     display: flex;
     border-radius:40px;
     height: 450px;
@@ -20,8 +20,9 @@
     justify-content: center;
 }
 .footer-section .logo-section p{
-     color: #666767;
-     text-align: center;
+    color: #666767;
+    text-align: justify;
+    width: 74%;
   
 }
 .footer-section .logo-section .social-media-links{
@@ -46,9 +47,9 @@
 }
 .footer-section .pages-link a{
    text-decoration: none;
-    color: #666767;
+    color: white;
     line-height: 48px;
-    font-weight: 700;
+    font-weight:0;
     font-size: 1.1rem;
 }
 .footer-section .policy-section{
@@ -62,9 +63,9 @@
 }
 .footer-section .policy-section a{
     text-decoration: none;
-     color: #666767;
+     color: white;
      line-height: 48px;
-     font-weight: 700;
+     font-weight: 0;
      font-size: 1.1rem;
  }
  .footer-section .copy-right p{
@@ -76,7 +77,8 @@
     width: 90%;
     align-items: end;
     padding-left: 10%;
-    justify-content: space-between;
+    color: white;
+    justify-content: space-evenly;
     display: flex;
 }
 

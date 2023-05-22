@@ -8,7 +8,6 @@
   
   .mainSec {
     width: 100%;
-    height: 230vh;
     overflow-x: clip;
   }
   
@@ -341,15 +340,14 @@
   }
   
   @media (max-width: 760px) {
+    footer{
+       margin-top: 190%;
+    }
     .getInTouch-container {
       display: flex;
       flex-direction: column;
     }
-    .mainSec {
-    
-      height: 310vh;
-  
-    }
+   
     .row-section .right-section .form-section {
       height: 340px !important;
     }
@@ -442,6 +440,9 @@
   }
   
   @media (max-width: 420px) {
+    footer{
+      margin-top: 320%;
+   }
     .header .logoSection img {
       width: 10rem;
     }
