@@ -93,7 +93,7 @@
                             </div>
                         </div>
                         <div>
-                            <button><img src="./assets/icone/share.png"> Share</button>
+                            <button id="shareButton"><img src="./assets/icone/share.png"> Share</button>
                         </div>
                     </div>
 
@@ -212,8 +212,8 @@
 
 
 
-                    <button style="margin-top: 1rem;"><img class="button-img"
-                            src="./assets/icone/Vertical-container.png" />Enquire Now</button>
+                    <button style="margin-top: 1rem;">  <a href="tel:+919567222268" style="text-decoration: none; color: white;"><img class="button-img"
+                            src="./assets/icone/Vertical-container.png" />Enquire Now</a></button>
                     <div class="course-feature">
                         <h5>This course Include</h5>
                         <ul>
@@ -339,19 +339,14 @@
         <!-- article section end -->
 
         <!-- fooer section added -->
-        <footer>
+        <footer class="blogSingle-footer">
             <div class="footer-section">
                 <div class="logo-section">
                     <img src="./assets/logos/Frame 676..png" style="width: 18rem;" />
                     <p>We are very particular about our courses equip the students with a thorough theoretical basis and
                         excellent practical skills in their respective fields. This is the reason why True Visory
                         remains the most sought-after place for freshers.</p>
-                    <div class="social-media-links">
-                        <div class="fab"><img src="./assets/logos/Group 21.png" /></div>
-                        <div class="fab"><img src="./assets/logos/Group 19.png" /></div>
-                        <div class="fab"><img src="./assets/logos/Group 20.png" /></div>
-                        <div class="fab"><img src="./assets/logos/Group 22.png" /></div>
-                    </div>
+    
                 </div>
                 <div class="pages-link">
                     <a href="#">About Us</a>
@@ -363,16 +358,22 @@
                     <a href="#">FAQ Glossary </a>
                     <a href="#">Privacy Policy </a>
                     <a href="#">Terms & Conditions</a>
-                    <a href="#">Equal Opportunity Policy</a>
                     <a href="#">Cookies Policy</a>
+                    <div class="social-media-links" style="display: flex;padding: 20px;">
+                        <div class="fab"><img src="./assets/logos/Group 21.png" /></div>
+                        <div class="fab"><img src="./assets/logos/Group 19.png" /></div>
+                        <div class="fab"><img src="./assets/logos/Group 20.png" /></div>
+                        <div class="fab"><img src="./assets/logos/Group 22.png" /></div>
+                    </div>
                 </div>
+                
                 <div class="copy-right">
                     <p>ALL COPYRIGHTS RESERVED @True VIsory</p>
-                    <p>PRIVACY POLICY | DISCLAIMER</p>
-
+    
+    
                 </div>
             </div>
-
+    
         </footer>
         <!-- blog section end -->
     </main>
@@ -394,6 +395,25 @@
         }
 
     })
+
+    const shareButton = document.getElementById('shareButton');
+
+if (navigator.share) {
+  shareButton.addEventListener('click', async () => {
+    try {
+      await navigator.share({
+        title: 'Shared Content Title',
+        text: 'Check out this awesome content!',
+        url: 'https://www.example.com'
+      });
+      console.log('Successfully shared.');
+    } catch (error) {
+      console.error('Error sharing:', error);
+    }
+  });
+} else {
+  shareButton.style.display = 'none';
+}
 </script>
 <script>
     function Next(Link) {

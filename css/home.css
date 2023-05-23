@@ -74,7 +74,7 @@ h1 {
 }
 .container-fluid .left-section button {
   text-transform: uppercase;
-  background: var(--button-bg-color);
+  background: orange;
   border: none;
   height: 3rem;
   width: 9rem;
@@ -216,7 +216,7 @@ h1 {
   border: none;
   padding: 1px 17px;
   font-size: 13px;
-  background: linear-gradient(265.16deg, #724d99 17.94%, #cbbfd9 109.03%);
+  background: orange;
   border-radius: 14.2698px;
   border-radius: 10px;
   color: #ffffff;

@@ -44,7 +44,7 @@
   .slider-container-c .article-slider-c .content .inner-content button{ 
     width: 50%;
     border: none;
-    background:linear-gradient(180deg, #E2F0F0 0%, #724D99 100%);
+    background:orange;
     color: white;
     padding: 5px 11px;
     border-radius: 10px;

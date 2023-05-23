@@ -35,7 +35,7 @@
     color: white !important;
 }
 .navSection .ctaBtn{
-    background: linear-gradient(265.16deg, #724D99 17.94%, #CBBFD9 109.03%);
+    background:orange;
     text-decoration: none;
     font-family: Helvetica;
     font-weight: 700;
@@ -82,7 +82,7 @@
     margin-right: -3rem;
   }
   .header{
-    height: 5rem;
+    height: 6rem;
     overflow: hidden;
     transition: 0.3s;
   }
