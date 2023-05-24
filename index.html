@@ -21,7 +21,7 @@
     <script src="script/loadingAnimation.js"></script>
 
     <section class="mainSec"
-        style="background: url(assets/banner/home-background.png);background-position: bottom center;padding-top: 8rem;background-size: cover;background-repeat: no-repeat;padding-bottom: 4rem;">
+        style="background: url(assets/banner/home-background.webp);background-position: bottom center;padding-top: 8rem;background-size: cover;background-repeat: no-repeat;padding-bottom: 4rem;">
         <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
             <div class="header" style="position: absolute; z-index: 110;top: 0;left:0;width: 100%;">
                 <div class="logoSection">
@@ -69,7 +69,7 @@
         "contentSmall": "Comprehensive accounting course covering financial statements, bookkeeping, budgeting, taxation, auditing, and other essential topics for financial analysis and decision-making.",
         "amount": "245k+ Sold",
         "Link": "accounting.html",
-        "image": "assets/courses/lady-2.png"
+        "image": "assets/courses/lady-2.webp"
     },
     {
         "title": "Designing",
@@ -77,14 +77,14 @@
         "contentSmall": "A creative design course exploring principles of visual communication, graphic design, user experience, and problem-solving for impactful and aesthetically pleasing designs.",
         "amount": "245k+ Sold",
         "Link": "designing.html",
-        "image": "assets/courses/lady-3.png"
+        "image": "assets/courses/lady-3.webp"
     }, {
         "title": "Logistics",
         "contentFull": "Logistics involves managing the flow of goods, services, and information from the point of origin to the point of consumption efficiently and effectively.",
         "contentSmall": "Logistics involves managing the flow of goods, services, and information from the point of origin to the point of consumption efficiently and effectively.",
         "amount": "245k+ Sold",
         "Link": "logistics.html",
-        "image": "assets/courses/lady-4.png"
+        "image": "assets/courses/lady-4.webp"
     }]
     // const subSliderContent = [{
     //     "title": "School of Film & Animation",
@@ -269,7 +269,7 @@
 
     for (let i = 0; i < subSliderContent.length; i++) {
         subSlider.innerHTML += `    <div class="subSlide" data="${i}" >
-                        <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
+                        <div class="subSlideMain" style="background: url(assets/images/banner-1.webp);">
                             <div class="contentSub">
                                 <h1>${subSliderContent[i].title}</h1>
                                 <p>${subSliderContent[i].contentSmall}</p>
@@ -283,7 +283,7 @@
     const respSlider = document.querySelector('.respSlider')
     for (let i = 0; i < subSliderContent.length; i++) {
         respSlider.innerHTML += `    <div class="subSlide" data="${i}">
-                        <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
+                        <div class="subSlideMain" style="background: url(assets/images/banner-1.webp);">
                             <div class="contentSub">
                                 <h1>${subSliderContent[i].title}</h1>
                                 <p>${subSliderContent[i].contentSmall}</p>
@@ -302,7 +302,7 @@
         const mainSlide = document.querySelector('.mainSlide')
         mainSlide.style.transform = 'translate(0,0)'
         mainSlide.style.opacity = '1'
-        mainSlide.innerHTML = `<div class="mainSlideBanner" style="background: url(assets/images/banner-1.png);">
+        mainSlide.innerHTML = `<div class="mainSlideBanner" style="background: url(assets/images/banner-1.webp);">
                         <img src="${subSliderContent[val].image}" alt="">
                         <div class="content">
                             <h1>${subSliderContent[val].title}</h1>
