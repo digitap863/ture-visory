@@ -745,14 +745,14 @@ height: 55% !important;
 
 
 .grid-item {
-display: inline-block;
-    height: 289px;
+    display: inline-block;
+    height: 356px;
     border-radius: 20px;
-   background-position: center !important;
-   background-size: cover !important;
+    background-position: center !important;
+    background-size: contain !important;
     overflow: hidden;
     text-align: center;
-    width: 400px;
+    width: 386px;
 }
 .grid-item img{
 	width:100%;
