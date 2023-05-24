@@ -106,9 +106,7 @@
     .footer-section .hidden{
         display: none;
     }
-    .blogSingle-footer{
-        height: 150vh !important;
-    }
+
 }
 @media screen and (max-width: 900px) {
     .footer-section .logo-section .social-media-links {

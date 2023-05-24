@@ -341,7 +341,7 @@
   
   @media (max-width: 760px) {
     footer{
-       margin-top: 190%;
+       margin-top: 170%;
     }
     .getInTouch-container {
       display: flex;
@@ -366,7 +366,7 @@
     padding: 15px;
   }
   .bannerContainer {
-    height: 60vh;
+    height: 70vh;
 }
     .header .navSection {
       display: none;
@@ -440,9 +440,7 @@
   }
   
   @media (max-width: 420px) {
-    footer{
-      margin-top: 320%;
-   }
+
     .header .logoSection img {
       width: 10rem;
     }
@@ -452,7 +450,7 @@
   
     }
     .bannerContainer {
-      height: 26rem;
+      height: 70vh;
       margin-top: -9px;
       margin-left: -2px;
     }
