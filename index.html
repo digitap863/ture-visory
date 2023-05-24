@@ -21,7 +21,7 @@
     <script src="script/loadingAnimation.js"></script>
 
     <section class="mainSec"
-        style="background: url(assets/banner/home-background.png);background-position: bottom center;padding-top: 8rem;background-size: cover;background-repeat: no-repeat;padding-bottom: 4rem;">
+        style="background: url(assets/banner/home-background.webp);background-position: bottom center;padding-top: 8rem;background-size: cover;background-repeat: no-repeat;padding-bottom: 4rem;">
         <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
             <div class="header" style="position: absolute; z-index: 110;top: 0;left:0;width: 100%;">
                 <div class="logoSection">
@@ -269,7 +269,7 @@
 
     for (let i = 0; i < subSliderContent.length; i++) {
         subSlider.innerHTML += `    <div class="subSlide" data="${i}" >
-                        <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
+                        <div class="subSlideMain" style="background: url(assets/images/banner-1.webp);">
                             <div class="contentSub">
                                 <h1>${subSliderContent[i].title}</h1>
                                 <p>${subSliderContent[i].contentSmall}</p>
@@ -283,7 +283,7 @@
     const respSlider = document.querySelector('.respSlider')
     for (let i = 0; i < subSliderContent.length; i++) {
         respSlider.innerHTML += `    <div class="subSlide" data="${i}">
-                        <div class="subSlideMain" style="background: url(assets/images/banner-1.png);">
+                        <div class="subSlideMain" style="background: url(assets/images/banner-1.webp);">
                             <div class="contentSub">
                                 <h1>${subSliderContent[i].title}</h1>
                                 <p>${subSliderContent[i].contentSmall}</p>
@@ -302,7 +302,7 @@
         const mainSlide = document.querySelector('.mainSlide')
         mainSlide.style.transform = 'translate(0,0)'
         mainSlide.style.opacity = '1'
-        mainSlide.innerHTML = `<div class="mainSlideBanner" style="background: url(assets/images/banner-1.png);">
+        mainSlide.innerHTML = `<div class="mainSlideBanner" style="background: url(assets/images/banner-1.webp);">
                         <img src="${subSliderContent[val].image}" alt="">
                         <div class="content">
                             <h1>${subSliderContent[val].title}</h1>
