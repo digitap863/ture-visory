@@ -96,7 +96,7 @@ margin-top: 6%;
     flex-direction: column;
     justify-content: end;
  
-    margin: -15% 0px 0px 0px;
+    margin: -15% auto auto 0px;
     background-size: contain;
     background-repeat: no-repeat;
 }
