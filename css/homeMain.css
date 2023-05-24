@@ -107,7 +107,8 @@
     margin-top: 0.5rem;
     line-height: 25px;
     margin-bottom: 1rem;
-	padding: 5px;
+	padding: 10px;
+	border-radius: 10px 30px;
     transition: all 0.5s;
 }
 .mainSlideBanner .content span{
