@@ -160,6 +160,23 @@
     justify-content: start;
 
 }
+.bannerContentCourses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8rem;
+    margin-top: 8rem;
+
+}
+.bannerContentCourses p{
+    font-size: 1.9rem;
+    color: white;
+    font-weight: 600;
+    max-width: 50%;
+    position: absolute;
+     top: 37%;
+
+}
 .subSlider .subSlide:nth-child(even){
 }
 .subSlider::-webkit-scrollbar{
@@ -215,7 +232,7 @@
     margin-left: 20px;
 }
 .subSlideMain .contentSub h1{
-    width: 70%;
+    width: 100%;
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
@@ -293,7 +310,7 @@
         height: 65% !important;
     }
     .subSlideMain .card-content{
-height: 45% !important;
+height: 55% !important;
     }
     .mainSlideBanner .content{
         height: 55%;
@@ -534,6 +551,7 @@ height: 45% !important;
     }
     .bannerContentCourses p{
         min-width: 80% !important;
+        font-size: 1.8 !important;
     }
     .headerContainer{
         height: 35rem !important;
@@ -729,7 +747,8 @@ height: 45% !important;
 .grid-item {
 display: inline-block;
     height: 289px;
-
+   background-position: center !important;
+   background-size: cover !important;
     overflow: hidden;
     text-align: center;
     width: 400px;
@@ -751,7 +770,7 @@ display: inline-block;
   text-align: center;
 }
 .filters {
-	width: 50%;
+	width: 75%;
 	text-align: center;
 	padding-bottom: 35px;
 	padding-top:20px;
