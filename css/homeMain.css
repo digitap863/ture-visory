@@ -747,6 +747,7 @@ height: 55% !important;
 .grid-item {
 display: inline-block;
     height: 289px;
+    border-radius: 20px;
    background-position: center !important;
    background-size: cover !important;
     overflow: hidden;
