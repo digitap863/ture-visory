@@ -781,11 +781,13 @@ height: 55% !important;
 .filters ul {
 	list-style: none;
     padding: 20px 10px;
-    box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+    box-shadow: -1px 1px 11px rgba(0,0,0,.2);
     margin: 0 40px;
     border-radius: 30px;
 	background-color: #ffffff;
     color: #4b2674;
+	width: "auto";
+	height: "auto";
 }
 
 .filters li {
