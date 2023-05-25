@@ -10,10 +10,7 @@ var swiper = new Swiper(".swiper", {
       modifier: 2,
       slideShadows: true
     },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-      },
+
     spaceBetween: 25,
     loop: true,
     pagination: {

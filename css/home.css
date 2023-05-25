@@ -207,6 +207,9 @@ h1 {
 .swiper-slide .card-image .content-card p {
   font-size: 10px;
   color: #ffff;
+  background: rgba(0,0,0,0.5);
+  margin-left: 13px;
+  border-radius: 15px;
 }
 .swiper-slide .card-image .content-card .card-button {
   display: flex;
@@ -908,6 +911,8 @@ footer {
   }
 
   .row-section .left-section h5 {
+    text-align: center;
+    margin-bottom: 8px;
     color: #ffffff;
     font-size: 1.5rem !important;
   }
@@ -1168,6 +1173,11 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+  .course-section .right-section img {
+    width: 11rem !important;
+    right: -20px !important;
+
+  }
   .container-fluid .right-section img {
     width: 16rem;
   }

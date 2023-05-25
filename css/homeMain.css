@@ -15,9 +15,38 @@
 
 }
 
-.header .logoSection {
+ .logoSection {
     width: 30%;
 }
+.header .logoSection img{
+    width: 14rem;
+    margin-top: 2.5rem;
+    margin-left: 4rem !important;
+
+
+
+}
+.header .black-logoSection img{
+    width: 16rem;
+     margin-top: 1.5rem;
+      margin-left: 1rem !important;
+}
+
+@media (max-width:600px) {
+    .header .logoSection img{
+        width: 11rem; 
+        margin-top: 2.5rem;
+        margin-left: 1rem !important;
+    
+
+    }
+    .header .black-logoSection img{
+        width: 13rem;
+        margin-top: 1.3rem;
+        margin-left: 0.3rem;
+    }
+}
+
 
 .header .navSection {
     width: 70%;
@@ -483,6 +512,9 @@ height: 55% !important;
     border-radius: 5px;
 }
 @media (max-width:760px) {
+    .grid-item {
+       left: -12px !important;
+    }
     .courseContainerStrip {
         width: 100%;
     }
@@ -494,6 +526,10 @@ height: 55% !important;
     .blogContainer .contentDiv{
         width: 100%;
 
+        
+    }
+    .bannerContentCourses p {
+        font-size: 1.3rem;
     }
     .blogContainer .imgDiv{
         width: 100%;
@@ -904,6 +940,7 @@ height: 55% !important;
 }
 
 .grid-item .card-content{
+    margin-top: 21px;
     align-items: end !important;
     justify-content: start !important;
     text-align: start !important;

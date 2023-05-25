@@ -10,6 +10,32 @@
     width: 30%;
 }
 
+.header .logoSection img{
+    width: 14rem; 
+    margin-top: 3rem;
+    margin-left: 2.4rem !important;
+
+
+}
+.header .black-logoSection img{
+    width: 16rem;
+     margin-top: 1.5rem;
+      margin-left: 1rem !important;
+}
+@media (max-width:600px) {
+    .header .logoSection img{
+        width: 11rem; 
+        margin-top: 2.5rem;
+        margin-left: 1rem !important;
+
+    }
+    .header .black-logoSection img{
+        width: 13rem;
+        margin-top: 1.3rem;
+        margin-left: 0.3rem;
+    }
+}
+
 .header .navSection {
     width: 70%;
     padding: 0 8%;
