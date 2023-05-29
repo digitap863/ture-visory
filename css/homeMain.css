@@ -147,7 +147,7 @@
     transition: all 0.5s;
 }
 .mainSlideBanner .content a{
-    background: orange;
+    background: #fb501c;
     padding: 10px 30px;
     font-size: 20px;
     border-radius: 5px;
