@@ -70,7 +70,7 @@
     text-transform: uppercase;
 }
 .navSection .ctaBtn{
-    background: orange;
+    background: #fb501c;
     text-decoration: none;
     font-family: Helvetica;
     font-weight: 700;
@@ -251,7 +251,7 @@
     font-size: 0.8rem;
 }
 .subSlideMain .contentSub a{
-    background: orange;
+    background: #fb501c;
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
