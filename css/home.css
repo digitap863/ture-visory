@@ -200,15 +200,21 @@ h1 {
 }
 .swiper-slide .card-image .content-card h3 {
   color: #ffffff;
-  margin-left: 12%;
+  margin-left: 9%;
   font-weight: 600;
   font-size: 19px;
 }
 .swiper-slide .card-image .content-card p {
+  max-width:90%;
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
   font-size: 10px;
   color: #ffff;
   background: rgba(0,0,0,0.5);
-  margin-left: 13px;
+  margin-left: 9px;
   border-radius: 15px;
 }
 .swiper-slide .card-image .content-card .card-button {
