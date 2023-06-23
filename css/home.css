@@ -222,6 +222,8 @@ h1 {
   display: flex;
 }
 
+.card-button p {margin-right:5px}
+
 .swiper-slide .card-image .content-card .card-button button {
   border: none;
   padding: 1px 17px;
