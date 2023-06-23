@@ -127,7 +127,7 @@
   .callback-back-section h2 {
     /* margin-top: 7%; */
     text-align: center;
-    color: #724d99;
+    color: #FB501C;
     font-size: 3rem;
     font-weight: 700;
     line-height: 92px;
@@ -147,11 +147,7 @@
     margin-right: 5%;
     margin-top: 8%;
   
-    background: linear-gradient(
-      10.96deg,
-      rgba(114, 77, 153, 0.99) 12.39%,
-      rgba(142, 107, 180, 0.69) 79.54%
-    );
+    background-color: #FB501C;
   }
   .row-section .left-section {
     width: 81%;
@@ -194,11 +190,7 @@
     padding: 3px 10px;
     top: 20%;
     height: 60%;
-    background: linear-gradient(
-      93.36deg,
-      rgba(114, 77, 153, 0.9) 25.3%,
-      rgba(141, 90, 196, 0.48) 87.94%
-    );
+    background-color: #FB501C;
   }
   .row-section .left-section input::placeholder {
     color: #d4d6d6;
@@ -222,7 +214,7 @@
     margin-top: 1rem;
   }
   .row-section .right-section .form-section h4 {
-    color: #724d99;
+    color: #FB501C;
     font-weight: 400;
     padding: 7px;
     font-size: 2rem;
@@ -257,11 +249,7 @@
     caret-color: rgb(7, 158, 246);
   }
   .row-section .right-section .form-section button {
-    background: linear-gradient(
-      93.36deg,
-      rgba(114, 77, 153, 0.9) 25.3%,
-      rgba(141, 90, 196, 0.48) 87.94%
-    );
+    background-color: #FB501C;
     /* margin-top: 3%; */
     border: none;
     color: #ffffff;
