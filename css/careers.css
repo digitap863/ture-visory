@@ -39,7 +39,7 @@
     height: 160px;
 }
 .main-header h1{
-    color: #724D99;
+    color: #FB501C;
     font-weight: 700;
 }
 .main-header p{
@@ -112,13 +112,13 @@
 }
 .value-section h2{
     text-align: center;
-    color: #724D99;
+    color: #FB501C;
     font-size: 35px;
     font-weight: 700;
     padding-bottom: 76px;
 }
 .career-details .career-header{
-    color: #724D99;
+    color: #FB501C;
     text-align: center;
     font-weight: 800;
     font-size: 36px;
@@ -172,7 +172,7 @@
     border-radius: 25px;
 }
 .career-details .main-career   :hover{
-   background: #8D60BC !important;
+   background: #FB501C !important;
     color: white;
 }
 .career-details .main-career :hover p{
