@@ -109,7 +109,7 @@ h1 {
   width: 50%;
 }
 .about-section .right-section h2 {
-  color: #ff8d04;
+  color: #fb501c;
   font-weight: 700;
   font-size: 3rem;
 }
@@ -183,7 +183,7 @@ h1 {
   font-weight: 700;
   font-size: 3rem;
   line-height: 56px;
-  color: #724d99;
+  color: #fb501c;
 }
 .swiper-slide .card-image {
   width: 100%;
@@ -262,7 +262,7 @@ h1 {
 .available-medium .right-section h2 {
   padding-left: 8%;
   padding-right: 4%;
-  color: rgba(255, 141, 4, 1);
+  color: #fb501c;
   font-weight: 700;
   font-size: 3rem;
   line-height: 56px;
@@ -333,7 +333,7 @@ h1 {
 .learn-with-us h2 {
   text-transform: uppercase;
   font-size: 3rem;
-  color: var(--text-blue--);
+  color: #fb501c;
   font-weight: 700;
   margin-left: 12%;
   line-height: 74px;
@@ -447,7 +447,7 @@ h1 {
 }
 .testimonial-section h2 {
   text-transform: uppercase;
-  color: #ff8f04;
+  color: #fb501c;
   font-weight: 700;
   padding-left: 10%;
   font-size: 3rem;
@@ -498,11 +498,7 @@ h1 {
   margin-right: 5%;
   margin-top: 10%;
 
-  background: linear-gradient(
-    10.96deg,
-    rgba(114, 77, 153, 0.99) 12.39%,
-    rgba(142, 107, 180, 0.69) 79.54%
-  );
+  background-color: #fb501c;
 }
 .row-section .left-section {
   width: 50%;
