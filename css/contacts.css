@@ -408,7 +408,7 @@
       top: -325px;
   }
   .row-section .right-section .form-section h4 {
-      color: #724D99;
+      color: #fb501c;
       font-weight: 400;
       font-size: 1.5rem;
   }
@@ -461,12 +461,12 @@
       /* padding: 3px 10px; */
       top: 20%;
       height: 60%;
-      background: linear-gradient( 93.36deg, rgba(114, 77, 153, 0.9) 25.3%, rgba(141, 90, 196, 0.48) 87.94% );
+      background-color: #fb501c;
   }
   .callback-back-section h2 {
     /* margin-top: 7%; */
     text-align: center;
-    color: #724d99;
+    color: #fb501c;
     font-size: 2rem;
     font-weight: 700;
     line-height: 57px;
@@ -483,7 +483,7 @@
       justify-content: center;
       margin-right: 5%;
       margin-top: 70%;
-      background: linear-gradient(10.96deg, rgba(114, 77, 153, 0.99) 12.39%, rgba(142, 107, 180, 0.69) 79.54%);
+      background-color: fb501c;
   }
   .row-section .left-section {
       width: 70%;
