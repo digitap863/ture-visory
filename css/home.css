@@ -538,11 +538,7 @@ h1 {
   width: 30%;
   top: 20%;
   height: 60%;
-  background: linear-gradient(
-    93.36deg,
-    rgba(114, 77, 153, 0.9) 25.3%,
-    rgba(141, 90, 196, 0.48) 87.94%
-  );
+  background-color: #fb501c;
 }
 .row-section .left-section input::placeholder {
   color: #d4d6d6;
@@ -601,11 +597,7 @@ h1 {
   caret-color: rgb(7, 158, 246);
 }
 .row-section .right-section .form-section button {
-  background: linear-gradient(
-    93.36deg,
-    rgba(114, 77, 153, 0.9) 25.3%,
-    rgba(141, 90, 196, 0.48) 87.94%
-  );
+  background-color: #fb501c;
   margin-top: 3%;
   border: none;
   color: #ffffff;
