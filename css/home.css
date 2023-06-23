@@ -216,6 +216,7 @@ h1 {
   background: rgba(0,0,0,0.5);
   margin-left: 9px;
   border-radius: 15px;
+  padding: 2px
 }
 .swiper-slide .card-image .content-card .card-button {
   display: flex;
