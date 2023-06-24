@@ -882,7 +882,7 @@ footer {
   }
   .container-fluid .left-section button {
     text-transform: uppercase;
-    background: var(--button-bg-color);
+    background-color: #fb501c;
     border: none;
     height: 3rem;
     margin-top: 2rem;
