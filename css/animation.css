@@ -2,7 +2,7 @@
 :root{
     --color-blue--: rgba(135, 121, 179, 1);
     --text-blue--: #724D99;
-    --button-bg-color:linear-gradient(265.16deg, #724D99 17.94%, #CBBFD9 109.03%);
+    --button-bg-color:#FB501C;
     }
     * {
         box-sizing: border-box;
