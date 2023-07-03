@@ -2,6 +2,129 @@
     margin: 0;
     padding: 0;
 }
+
+/* Chat button call button */
+
+.chatnow {
+  position: absolute;
+  height: 60px;
+  width: 70px;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 0 50px 50px 0px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.chatnow img {
+  height: 55px;
+  width: 55px;
+}
+
+.chatnow p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-left: -80px;
+  color: #fb501c;
+  font-family: Helvetica;
+}
+
+.callnow {
+  position: absolute;
+  height: 60px;
+  width: 70px;
+  top: 63%;
+  left: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 0 50px 50px 0px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.callnow img {
+  height: 55px;
+  width: 55px;
+}
+
+.callnow p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-left: -60px;
+  color: #fb501c;
+  font-family: Helvetica;
+}
+
+.chatnow:hover {
+  width: 160px;
+  background-color: #ffffff;
+  border-radius: 0 50px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+.callnow:hover {
+  width: 130px;
+  background-color: #ffffff;
+  border-radius: 0 50px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5px;
+}
+
+@media (max-width: 500px) {
+  .chatnow {
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+  }
+
+  .chatnow img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .callnow {
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    top: 60%;
+  }
+
+  .callnow img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .chatnow:hover {
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    padding-right: 5px;
+  }
+
+  .callnow:hover {
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    padding-right: 5px;
+  }
+}
+
+/* body main starting*/
+
 .mainSec{
     width: 100%;
     overflow-x: clip;
