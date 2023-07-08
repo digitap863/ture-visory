@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>True Visory</title>
+
+    <link rel="stylesheet" href="css/homeMain.css" />
+  </head>
+
+  <body>
+    <div class="overlay">
+      <div class="overlayAnimation">
+        <div id="loading"></div>
+      </div>
+    </div>
+    <script src="script/loadingAnimation.js"></script>
+
+    <section
+      class="mainSec"
+      style="
+        background: url(assets/banner/home-background.webp);
+        background-position: center;
+        padding-top: 8rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* padding-bottom: 4rem; */
+      "
+    >
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        "
+      >
+        <div
+          class="header"
+          style="position: absolute; z-index: 110; top: 0; left: 0; width: 100%"
+        >
+          <div class="logoSection">
+            <img src="assets/logos/Frame 676..png" alt="" />
+          </div>
+          <div class="navSection">
+            <a class="nav" href="index.html" style="color: white">Home</a>
+            <a class="nav" href="about.html">About Us</a>
+            <a class="nav" href="logistics.html">Logistics</a>
+            <a class="nav" href="accounting.html">Accounting</a>
+            <a class="nav" href="designing.html">Designing</a>
+
+            <a class="nav" href="blogs.html">Blogs</a>
+            <a class="nav" href="contacts.html">Contact Us</a>
+          </div>
+          <img src="assets/icone/Group.svg" class="navHamBurger" alt="" />
+        </div>
+        <div class="SliderSection">
+          <div class="mainSlide"></div>
+          <div class="subSlider"></div>
+        </div>
+        <div class="respSlider"></div>
+      </div>
+
+      <div class="buttons">
+        <span class="prevButton"></span>
+        <span class="nextButton"></span>
+      </div>
+      <div class="respButtons">
+        <span class="prevButtonResp"></span>
+        <span class="nextButtonResp"></span>
+      </div>
+    </section>
+
+    <!-- Chat Call Buttons-->
+    <section>
+      <div class="chatnow">
+        <p class="hide">Message Us</p>
+        <a
+          href="https://api.whatsapp.com/send?1=pt_BR&phone=+919567222268"
+          target="_blank"
+        >
+          <img src="./assets/logos/whatsapp.png" alt="whatsapp button"
+        /></a>
+      </div>
+      <div class="callnow">
+        <p class="hide">Call Us</p>
+        <a href="tel:919567222268">
+          <img src="./assets/logos/callNow.png" alt="call now button"
+        /></a>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const subSliderContent = [
+      {
+        title: "Accounting",
+        contentFull:
+          "Learn financial management, data analysis, auditing, taxation, decoding and reporting.",
+        contentSmall:
+          "Learn financial management, data analysis, auditing, taxation, decoding and reporting.",
+        amount: "245k+ Sold",
+        Link: "accounting.html",
+        image: "assets/courses/lady-2.webp",
+      },
+      {
+        title: "Designing",
+        contentFull:
+          "From Inspiration to Creation: Explore Your Interest with Our Dynamic Designing Courses!",
+        contentSmall:
+          "From Inspiration to Creation: Explore Your Interest with Our Dynamic Designing Courses!",
+        amount: "245k+ Sold",
+        Link: "designing.html",
+        image: "assets/courses/lady-3.webp",
+      },
+      {
+        title: "Logistics",
+        contentFull:
+          "Master the Art of Efficient Business Flow. Explore vibrant course program in Logistics and Supply Chain Management.",
+        contentSmall:
+          "Master the Art of Efficient Business Flow. Explore vibrant course program in Logistics and Supply Chain Management.",
+        amount: "245k+ Sold",
+        Link: "logistics.html",
+        image: "assets/courses/man-1.webp",
+      },
+    ];
+
+    const mainContainer = document.querySelector(".subSlider");
+    const nextButton = document.querySelector(".nextButton");
+    const prevButton = document.querySelector(".prevButton");
+
+    let currentSlide = 0;
+
+    function nextSlide() {
+      const numSlides = mainContainer.children.length;
+      currentSlide = (currentSlide + 1) % numSlides;
+      if (currentSlide != subSliderContent.length - 1) {
+        mainContainer.children[currentSlide].scrollIntoView({
+          behavior: "smooth",
+        });
+      } else {
+        mainContainer.children[0].scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+      const mainSlide = document.querySelector(".mainSlide");
+      mainSlide.style.transform = "translate(0,5rem)";
+      mainSlide.style.opacity = "0.3";
+      setTimeout(() => {
+        mainSlideView(currentSlide);
+      }, 300);
+    }
+    function prevSlide() {
+      if (currentSlide != 0) {
+        const numSlides = mainContainer.children.length;
+        currentSlide = (currentSlide - 1) % numSlides;
+        mainContainer.children[currentSlide].scrollIntoView({
+          behavior: "smooth",
+        });
+        mainSlideView(currentSlide);
+        const mainSlide = document.querySelector(".mainSlide");
+        mainSlide.style.transform = "translate(0,-5rem)";
+        mainSlide.style.opacity = "0.3";
+        setTimeout(() => {
+          mainSlideView(currentSlide);
+        }, 300);
+      }
+    }
+
+    nextButton.addEventListener("click", () => {
+      nextSlide();
+    });
+    prevButton.addEventListener("click", () => {
+      prevSlide();
+    });
+
+    const mainContainerResp = document.querySelector(".respSlider");
+    const nextButtonResp = document.querySelector(".nextButtonResp");
+    const prevButtonResp = document.querySelector(".prevButtonResp");
+    let currentSlideResp = 0;
+
+    function nextResp() {
+      const numSlides = mainContainerResp.children.length;
+      currentSlideResp = (currentSlideResp + 1) % numSlides;
+      if (currentSlideResp != subSliderContent.length - 1) {
+        mainContainerResp.children[currentSlideResp].scrollIntoView({
+          behavior: "smooth",
+        });
+      } else {
+        mainContainerResp.children[0].scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+    function prevResp() {
+      if (currentSlideResp != 0) {
+        const numSlides = mainContainerResp.children.length;
+        currentSlideResp = (currentSlideResp - 1) % numSlides;
+        mainContainerResp.children[currentSlideResp].scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+    nextButtonResp.addEventListener("click", () => {
+      nextResp();
+    });
+    prevButtonResp.addEventListener("click", () => {
+      prevResp();
+    });
+
+    const subSlider = document.querySelector(".subSlider");
+
+    for (let i = 0; i < subSliderContent.length; i++) {
+      subSlider.innerHTML += `    <div class="subSlide" data="${i}" >
+                        <div class="subSlideMain" style="background: url(assets/images/banner-1.webp);">
+                            <div class="contentSub">
+                                <h1>${subSliderContent[i].title}</h1>
+                                <p>${subSliderContent[i].contentSmall}</p>
+                                <span>${subSliderContent[i].amount}</span>
+                                <a href=${subSliderContent[i].Link}>Enrol Now</a>
+                            </div>
+                            <img src="${subSliderContent[i].image}" alt="">
+                        </div>
+                    </div>`;
+    }
+    const respSlider = document.querySelector(".respSlider");
+    for (let i = 0; i < subSliderContent.length; i++) {
+      respSlider.innerHTML += `    <div class="subSlide" data="${i}">
+                        <div class="subSlideMain" style="background: url(assets/images/banner-1.webp);">
+                            <div class="contentSub">
+                                <h1>${subSliderContent[i].title}</h1>
+                                <p>${subSliderContent[i].contentSmall}</p>
+                                <span>${subSliderContent[i].amount}</span>
+                                <a href=${subSliderContent[i].Link}>Enrol Now</a>
+                            </div>
+                            <img src="${subSliderContent[i].image}" alt="">
+                        </div>
+                    </div>`;
+    }
+    mainContainerResp.children[currentSlideResp].scrollIntoView({
+      behavior: "smooth",
+    });
+
+    function mainSlideView(val) {
+      const mainSlide = document.querySelector(".mainSlide");
+      mainSlide.style.transform = "translate(0,0)";
+      mainSlide.style.opacity = "1";
+      mainSlide.innerHTML = `<div class="mainSlideBanner" style="background: url(assets/images/banner-1.webp);">
+                        <img src="${subSliderContent[val].image}" alt="">
+                        <div class="content">
+                            <h1>${subSliderContent[val].title}</h1>
+                            <p>${subSliderContent[val].contentFull}</p>
+                            <span>${subSliderContent[val].amount}</span>
+                            <a href="${subSliderContent[val].Link}">Enrol Now</a>
+                        </div>
+                    </div>`;
+    }
+    mainSlideView(0);
+
+    var interval;
+    let slide = true;
+    interval = setInterval(() => {
+      if (slide) {
+        nextSlide();
+        nextResp();
+      }
+    }, 5000);
+    let btns = document.querySelector(".buttons").querySelectorAll("span");
+
+    btns.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        slide = false;
+      });
+      item.addEventListener("mouseout", () => {
+        slide = true;
+      });
+    });
+    document.querySelectorAll(".mainSlide").forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        slide = false;
+      });
+      item.addEventListener("mouseout", () => {
+        slide = true;
+      });
+    });
+  </script>
+  <script>
+    let btn = document.querySelector(".content").querySelectorAll("span");
+    btn.forEach((item) => {
+      item.addEventListener("click", () => {
+        window.location.href = "blogSingle.html";
+      });
+    });
+
+    const navHamBurger = document.querySelector(".navHamBurger");
+    const header = document.querySelector(".header");
+    let navState = false;
+    navHamBurger.addEventListener("click", () => {
+      if (!navState) {
+        header.style.height = "25rem";
+        header.style.backgroundColor = "rgb(106 96 116)";
+        navState = true;
+      } else {
+        header.style.height = "6rem";
+        header.style.backgroundColor = "transparent";
+
+        navState = false;
+      }
+    });
+    document.querySelectorAll(".nav").forEach((item) => {
+      item.style.color = "#CFC0DE";
+    });
+    document.querySelectorAll(".nav")[0].style.color = "white";
+  </script>
+  <script>
+    function singleCourse() {
+      window.location.href = "/animation.html";
+    }
+  </script>
+  <script></script>
+  <script src="script/header.js"></script>
+</html>
