@@ -241,13 +241,14 @@
 
       const navHamBurger = document.querySelector(".navHamBurger");
       const header = document.querySelector(".header");
+      header.style.height = "5rem";
       let navState = false;
       navHamBurger.addEventListener("click", () => {
         if (!navState) {
           header.style.height = "25rem";
           navState = true;
         } else {
-          header.style.height = "6rem";
+          header.style.height = "5rem";
           navState = false;
         }
       });
