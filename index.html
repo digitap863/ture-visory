@@ -295,6 +295,7 @@
 
     const navHamBurger = document.querySelector(".navHamBurger");
     const header = document.querySelector(".header");
+    header.style.height = "5rem";
     let navState = false;
     navHamBurger.addEventListener("click", () => {
       if (!navState) {
@@ -302,7 +303,7 @@
         header.style.backgroundColor = "rgb(106 96 116)";
         navState = true;
       } else {
-        header.style.height = "6rem";
+        header.style.height = "5rem";
         header.style.backgroundColor = "transparent";
 
         navState = false;
