@@ -141,7 +141,7 @@
       <section>
         <div class="our-courses" id="our-courses">
           <div class="our-courses-contents">
-            <h2>EXPLORE OUR MAIN COURSES</h2>
+            <h2>EXPLORE OUR COURSES</h2>
             <div class="filtr-tabs">
               <ul>
                 <li class="list active" data-filter="all">All</li>
@@ -157,7 +157,7 @@
               <div class="col-12 col-md-4 imgs-colmn">
                 <div class="photo" data-item="logistics">
                   <img
-                    src="./assets/single-course-image/adv-diploma-financial-management.webp"
+                    src="./assets/single-course-image/pg-supply-chain.webp"
                     alt=""
                   />
                   <div class="course-single-content">
@@ -181,7 +181,7 @@
                     alt=""
                   />
                   <div class="course-single-content">
-                    <h2>Advanced Diploma in Graphic Designing</h2>
+                    <h2>Diploma in Graphic Designing</h2>
                     <a href="contacts.html"><button>Book Now</button></a>
                   </div>
                 </div>
@@ -197,7 +197,7 @@
               <div class="col-12 col-md-4 imgs-colmn">
                 <div class="photo" data-item="accounting">
                   <img
-                    src="./assets/single-course-image/Diploma--indian-and-foregin-accounting.webp"
+                    src="./assets/single-course-image/Diploma-Global-Accounting.webp"
                     alt=""
                   />
                   <div class="course-single-content">
@@ -239,7 +239,7 @@
                     alt=""
                   />
                   <div class="course-single-content">
-                    <h2>Diploma in International Accounting</h2>
+                    <h2>Advanced Diploma in International Accounting</h2>
                     <a href="contacts.html"><button>Book Now</button></a>
                   </div>
                 </div>
@@ -693,9 +693,9 @@
 
       <!-- fooer section added -->
       <footer>
-        <div class="footer-section">
-          <div class="logo-section">
-            <img src="./assets/logos/Frame 676..png" style="width: 18rem" />
+        <div class="row footer-section">
+          <div class="col-12 col-md-4 logo-section">
+            <img class="img-fluid" src="./assets/logos/Frame 676..png" />
             <p>
               We are very particular about our courses equip the students with a
               thorough theoretical basis and excellent practical skills in their
@@ -703,7 +703,7 @@
               most sought-after place for freshers.
             </p>
           </div>
-          <div class="pages-link" style="width: 20%">
+          <div class="col-12 col-md-2 pages-link">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="logistics.html">Logistics</a>
@@ -711,7 +711,7 @@
             <a href="designing.html">Designing</a>
             <a href="contacts.html">Contact Us</a>
           </div>
-          <div class="policy-section" style="width: 25%">
+          <div class="col-12 col-md-2 policy-section">
             <a href="blogs.html">Blog </a>
             <a href="index.html">FAQ Glossary </a>
             <a href="privacypolicy.html">Privacy Policy </a>
@@ -719,16 +719,35 @@
             <a href="coockies.html">Cookies Policy</a>
             <br />
 
-            <h4 style="color: #cccaca">Follow Us:</h4>
-            <div
-              class="social-media-links"
-              style="display: flex; padding: 20px"
-            >
-              <div class="fab"><img src="./assets/logos/Group 21.png" /></div>
-              <div class="fab"><img src="./assets/logos/Group 19.png" /></div>
-              <div class="fab"><img src="./assets/logos/Group 20.png" /></div>
-              <div class="fab"><img src="./assets/logos/Group 22.png" /></div>
+            <h5 style="color: #cccaca">Follow Us:</h5>
+            <div class="social-media-links">
+              <div class="sm-icons">
+                <img src="./assets/logos/Group 21.png" />
+              </div>
+              <div class="sm-icons">
+                <img src="./assets/logos/Group 19.png" />
+              </div>
+              <div class="sm-icons">
+                <img src="./assets/logos/Group 20.png" />
+              </div>
+              <div class="sm-icons">
+                <img src="./assets/logos/Group 22.png" />
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-4 address">
+            <h3>Address</h3>
+            <p>
+              True Visory Academy <br />
+              3rd Floor Style Plaza, <br />
+              Near Vyttila mobility hub exit, <br />
+              Vyttila 682019, Ernakulam
+            </p>
+            <h5>Phone</h5>
+            <p>
+              +91 9567 2222 68 <br />
+              +91 9567 2222 78
+            </p>
           </div>
 
           <div class="copy-right">
@@ -736,7 +755,7 @@
           </div>
         </div>
       </footer>
-      <!-- blog section end -->
+      <!-- footer section end -->
     </main>
 
     <script>
@@ -772,7 +791,7 @@
     <script>
       function runCounters() {
         const counters = document.querySelectorAll(".counter");
-        const speed = 2000; // The lower the slower
+        const speed = 1000; // The lower the slower
 
         counters.forEach((counter) => {
           const target = +counter.getAttribute("data-target");
@@ -794,7 +813,7 @@
 
       runCounters(); // Initial call to start the counters
 
-      // To continuously update the counters every 2 seconds, you can use setInterval
+      // To continuously update the counters every 5 seconds, you can use setInterval
       setInterval(runCounters, 5000);
     </script>
   </body>
