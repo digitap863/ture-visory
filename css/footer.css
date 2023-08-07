@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
 .footer-section {
   width: 95%;
+  height: auto !important;
   margin-left: 2.5%;
   margin-right: 2.5%;
   background: #fb501c;
@@ -13,65 +18,100 @@
   padding: 14px;
 }
 .footer-section .logo-section {
-  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  padding-left: 4vw;
+}
+
+.footer-section .logo-section img {
+  margin-bottom: 15px !important;
 }
 .footer-section .logo-section p {
-  color: white;
-  text-align: justify;
-  width: 84%;
+  text-align: left;
+  width: 95%;
   line-height: 23px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  font-weight: 500;
 }
-.footer-section .logo-section .social-media-links {
+
+.social-media-links {
   display: flex;
-  justify-content: space-between;
-  width: 30%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 !important;
 }
+
+.social-media-links .sm-icons {
+  padding: 0;
+}
+
 .social-media-links img {
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 0.5vw;
 }
 
 .footer-section .pages-link {
-  width: 30%;
   display: flex;
   margin-top: 3rem;
   justify-content: start;
   align-items: start;
   justify-items: center;
   flex-direction: column;
-
-  padding-left: 50px;
 }
 .footer-section .pages-link a {
   text-decoration: none;
-  color: white;
   line-height: 35px;
-  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
   font-weight: 500;
-  font-size: 1.1rem;
 }
 .footer-section .policy-section {
-  width: 30%;
   margin-top: 3rem;
   display: flex;
   justify-content: start;
   align-items: start;
   justify-items: center;
   flex-direction: column;
-
-  padding-left: 30px;
 }
 .footer-section .policy-section a {
   text-decoration: none;
   color: white;
   line-height: 35px;
-  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
   font-weight: 500;
-  font-size: 1.1rem;
 }
+
+.address {
+  padding-left: 3vw;
+}
+
+.address h3 {
+  margin-top: 3rem;
+}
+.address h3,
+h5 {
+  color: #ffffff !important;
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  font-weight: 700 !important;
+}
+
+.address p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+
 .footer-section .copy-right p {
   color: #ffffff;
   font-size: 0.8rem;
@@ -87,41 +127,4 @@
 }
 
 @media screen and (max-width: 700px) {
-  .footer-section .logo-section {
-    width: 100%;
-  }
-  .footer-section .pages-link {
-    display: none;
-  }
-
-  .footer-section .policy-section {
-    display: none;
-  }
-  .footer-section .logo-section .social-media-links {
-    width: 60%;
-  }
-  .footer-section .hidden {
-    display: none;
-  }
-}
-@media screen and (max-width: 900px) {
-  .footer-section .logo-section .social-media-links {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-  }
-  .footer-section .logo-section p {
-    color: #ffffff;
-    text-align: justify;
-  }
-  .footer-section .footer-logo {
-    width: 15rem;
-    padding-bottom: 62px;
-  }
-  .footer-section .logo-section {
-    padding: 0px 20px;
-  }
-}
-.logo-section p {
-  padding: 20px;
 }
